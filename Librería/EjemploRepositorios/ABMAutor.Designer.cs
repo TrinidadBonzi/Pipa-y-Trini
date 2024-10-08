@@ -88,6 +88,7 @@
             dgvListadoAutores.Name = "dgvListadoAutores";
             dgvListadoAutores.Size = new Size(850, 452);
             dgvListadoAutores.TabIndex = 0;
+            dgvListadoAutores.CellContentClick += dgvListadoAutores_CellContentClick;
             // 
             // tabAlta
             // 

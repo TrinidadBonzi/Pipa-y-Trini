@@ -50,10 +50,31 @@ namespace CPresentacion
                 _autorLogic.AltaAutor(nombre, apellido, nacionalidad, email, telefono, biografia);
                 MessageBox.Show("El autor se ha registrado con éxito.");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void dgvListadoAutores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                tbNombreAlta.Text = dgvListadoAutores.CurrentRow.Cells[0].Value.ToString();
+                tbApellidoAlta.Text = dgvListadoAutores.CurrentRow.Cells[1].Value.ToString();
+                tbNacionalidadAlta.Text = dgvListadoAutores.CurrentRow.Cells[2].Value.ToString();
+                tbEmailAlta.Text = dgvListadoAutores.CurrentRow.Cells[3].Value.ToString();
+                tbTelefonoAlta.Text = dgvListadoAutores.CurrentRow.Cells[4].Value.ToString();
+                tbBiografiaAlta.Text = dgvListadoAutores.CurrentRow.Cells[5].Value.ToString();
+            }
+            catch (Exception ex)
+            {
+                
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+
+
     }
 }
