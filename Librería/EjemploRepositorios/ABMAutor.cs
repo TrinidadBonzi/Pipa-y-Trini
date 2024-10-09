@@ -80,8 +80,36 @@ namespace CPresentacion
 
         private void btModificar_Click(object sender, EventArgs e)
         {
+            if (Id != -1)
+            {
+                // Obtenemos los datos modificados desde los TextBox
+                string nombre = tbNombreAlta.Text;
+                string apellido = tbApellidoAlta.Text;
+                string nacionalidad = tbNacionalidadAlta.Text;
+                string email = tbEmailAlta.Text;
+                string telefono = tbTelefonoAlta.Text;
+                string biografia = tbBiografiaAlta.Text;
 
+                try
+                {
+                    // Llamamos a la lógica para actualizar el autor
+                    _autorLogic.ActualizarAutor(Id, nombre, apellido, nacionalidad, email, telefono, biografia);
+
+                    // Actualizamos el listado de autores después de modificar
+                    MessageBox.Show("El autor ha sido modificado con éxito.");
+                    CargarListadoAutores();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al modificar el autor: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selecciona un autor para modificar.");
+            }
         }
+
 
         private void btEliminar_Click(object sender, EventArgs e)
         {
