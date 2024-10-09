@@ -1,43 +1,35 @@
-﻿using CEntidades.Entidades;
-using CLogica.Contracts;
+﻿using CLogica.Contracts;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CPresentacion
 {
     public partial class ABMAutor : Form
     {
-
         private IAutorLogic _autorLogic;
-
         public ABMAutor(IAutorLogic autorLogic)
         {
             _autorLogic = autorLogic;
             InitializeComponent();
+            CargarListadoAutores();
         }
-
-        private void tabControlPrincipal_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (tabControlPrincipal.SelectedIndex == 0)
-            {
-                CargarListadoAutores();
-            }
-        }
-
         private void ABMAutor_Load(object sender, EventArgs e)
         {
-            if (tabControlPrincipal.SelectedIndex == 0)
-            {
-                CargarListadoAutores();
-            }
+            CargarListadoAutores();
         }
-
         private void CargarListadoAutores()
         {
             List<dynamic> autors = _autorLogic.ObtenerAutoresParaListado();
-            //List<Autor> autors = _autorLogic.ObtenerAutores();
             dgvListadoAutores.DataSource = autors;
         }
-
-        private void btnGuardar_Click(object sender, EventArgs e)
+        private void btGuardar_Click(object sender, EventArgs e)
         {
             string nombre = tbNombreAlta.Text;
             string apellido = tbApellidoAlta.Text;
@@ -45,17 +37,19 @@ namespace CPresentacion
             string email = tbEmailAlta.Text;
             string telefono = tbTelefonoAlta.Text;
             string biografia = tbBiografiaAlta.Text;
+
             try
             {
                 _autorLogic.AltaAutor(nombre, apellido, nacionalidad, email, telefono, biografia);
                 MessageBox.Show("El autor se ha registrado con éxito.");
+                CargarListadoAutores(); // Actualizamos el listado después de guardar un nuevo autor.
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-        }
 
+        }
         private void dgvListadoAutores_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -69,12 +63,8 @@ namespace CPresentacion
             }
             catch (Exception ex)
             {
-                
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-
-
-
     }
 }
