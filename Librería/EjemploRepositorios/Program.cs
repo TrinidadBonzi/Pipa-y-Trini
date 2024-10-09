@@ -55,7 +55,7 @@ namespace EjemploRepositorios
                     services.AddTransient<ICopiaRepository, CopiaRepository>();
 
 
-                    services.AddTransient<Form1>();
+                    services.AddTransient<ABMAutor>();
                     services.AddTransient<ABMAutor>();
 
                     services.AddDbContext<LibreriaContext>(options => options.UseSqlServer("Data Source=localhost\\SQLEXPRESS;Initial Catalog=LibreriaProg2024;Integrated Security=True;TrustServerCertificate=true"), ServiceLifetime.Transient);
