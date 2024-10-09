@@ -66,5 +66,21 @@ namespace CPresentacion
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+        public static int Id = -1;
+        private void dgvListadoAutores_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            Id = Convert.ToInt32(dgvListadoAutores.Rows[e.RowIndex].Cells[0].Value.ToString());
+            tbNombreAlta.Text = dgvListadoAutores.Rows[e.RowIndex].Cells[1].Value == DBNull.Value ? "" : dgvListadoAutores.Rows[e.RowIndex].Cells[1].Value.ToString();
+            tbApellidoAlta.Text = dgvListadoAutores.Rows[e.RowIndex].Cells[2].Value == DBNull.Value ? "" : dgvListadoAutores.Rows[e.RowIndex].Cells[2].Value.ToString();
+            tbNacionalidadAlta.Text = dgvListadoAutores.Rows[e.RowIndex].Cells[3].Value == DBNull.Value ? "" : dgvListadoAutores.Rows[e.RowIndex].Cells[3].Value.ToString();
+            tbEmailAlta.Text = dgvListadoAutores.Rows[e.RowIndex].Cells[4].Value == DBNull.Value ? "" : dgvListadoAutores.Rows[e.RowIndex].Cells[4].Value.ToString();
+            tbTelefonoAlta.Text = dgvListadoAutores.Rows[e.RowIndex].Cells[5].Value == DBNull.Value ? "" : dgvListadoAutores.Rows[e.RowIndex].Cells[5].Value.ToString();
+            tbBiografiaAlta.Text = dgvListadoAutores.Rows[e.RowIndex].Cells[6].Value == DBNull.Value ? "" : dgvListadoAutores.Rows[e.RowIndex].Cells[6].Value.ToString();
+        }
+
+        private void btModificar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
