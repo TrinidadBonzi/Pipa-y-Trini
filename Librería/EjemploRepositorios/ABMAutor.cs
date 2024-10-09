@@ -82,5 +82,37 @@ namespace CPresentacion
         {
 
         }
+
+        private void btEliminar_Click(object sender, EventArgs e)
+        {
+            if (Id != -1)
+            {
+                // Confirmación de eliminación
+                var confirmResult = MessageBox.Show("¿Estás seguro de eliminar este autor?", "Confirmar Eliminación", MessageBoxButtons.YesNo);
+
+                if (confirmResult == DialogResult.Yes)
+                {
+                    try
+                    {
+                        // Llamada a la lógica para eliminar el autor por su Id
+                        _autorLogic.EliminarAutor(Id.ToString()); // Convertimos 'Id' a string si es necesario.
+
+                        // Actualizamos el listado después de eliminar
+                        MessageBox.Show("El autor ha sido eliminado con éxito.");
+                        CargarListadoAutores();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error al eliminar el autor: " + ex.Message);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selecciona un autor para eliminar.");
+            }
+        }
+
+
     }
 }
