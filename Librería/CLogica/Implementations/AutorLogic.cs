@@ -117,20 +117,28 @@ namespace CLogica.Implementations
             _autorRepository.Save();
         }
 
-        public void EliminarAutor(string documento)
+        public void EliminarAutor(string id)
         {
-            if (string.IsNullOrEmpty(documento) || !IsValidDocumento(documento))
+            if (string.IsNullOrEmpty(id))
                 throw new ArgumentException("El documento ingresado es inválido.");
 
-            Autor? autor = _autorRepository.FindByCondition(p => p.Persona.Documento == documento).FirstOrDefault();
+            // Intentamos convertir el 'id' a un entero
+            if (!int.TryParse(id, out int idPersona))
+                throw new ArgumentException("El ID proporcionado no es un número válido.");
+
+            // Buscamos el autor usando el 'idPersona' que ahora es de tipo int
+            Autor? autor = _autorRepository.FindByCondition(p => p.Persona.IdPersona == idPersona).FirstOrDefault();
 
             if (autor == null)
             {
-                throw new ArgumentNullException("No se ha encontrado un autor con ese documento");
+                throw new ArgumentNullException("No se ha encontrado un autor con ese ID");
             }
+
+            // Eliminamos el autor si fue encontrado
             _autorRepository.Delete(autor);
             _autorRepository.Save();
         }
+
 
         #region validaciones
         private bool ContainsInvalidCharacter(string text)

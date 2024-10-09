@@ -184,6 +184,7 @@
             btEliminar.TabIndex = 14;
             btEliminar.Text = "Eliminar";
             btEliminar.UseVisualStyleBackColor = false;
+            btEliminar.Click += btEliminar_Click;
             // 
             // dgvListadoAutores
             // 

@@ -11,7 +11,7 @@ namespace CLogica.Contracts
 
         void ActualizarAutor(string documento, Autor autorActualizar);
 
-        void EliminarAutor(string documento);
+        void EliminarAutor(string id);
 
 
     }
