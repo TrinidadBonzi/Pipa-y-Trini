@@ -101,7 +101,7 @@
             // 
             lbBiografia.AutoSize = true;
             lbBiografia.Font = new Font("Gloucester MT Extra Condensed", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbBiografia.Location = new Point(21, 197);
+            lbBiografia.Location = new Point(275, 40);
             lbBiografia.Name = "lbBiografia";
             lbBiografia.Size = new Size(62, 23);
             lbBiografia.TabIndex = 5;
@@ -144,17 +144,17 @@
             // 
             // tbBiografiaAlta
             // 
-            tbBiografiaAlta.Location = new Point(83, 205);
+            tbBiografiaAlta.Location = new Point(343, 44);
             tbBiografiaAlta.Multiline = true;
             tbBiografiaAlta.Name = "tbBiografiaAlta";
-            tbBiografiaAlta.Size = new Size(174, 127);
+            tbBiografiaAlta.Size = new Size(296, 144);
             tbBiografiaAlta.TabIndex = 11;
             // 
             // btGuardar
             // 
             btGuardar.BackColor = Color.FromArgb(255, 192, 192);
             btGuardar.Font = new Font("Gloucester MT Extra Condensed", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btGuardar.Location = new Point(19, 353);
+            btGuardar.Location = new Point(689, 48);
             btGuardar.Name = "btGuardar";
             btGuardar.Size = new Size(87, 37);
             btGuardar.TabIndex = 12;
@@ -166,18 +166,19 @@
             // 
             btModificar.BackColor = Color.FromArgb(255, 192, 192);
             btModificar.Font = new Font("Gloucester MT Extra Condensed", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btModificar.Location = new Point(120, 353);
+            btModificar.Location = new Point(689, 93);
             btModificar.Name = "btModificar";
             btModificar.Size = new Size(87, 37);
             btModificar.TabIndex = 13;
             btModificar.Text = "Modificar";
             btModificar.UseVisualStyleBackColor = false;
+            btModificar.Click += btModificar_Click;
             // 
             // btEliminar
             // 
             btEliminar.BackColor = Color.FromArgb(255, 192, 192);
             btEliminar.Font = new Font("Gloucester MT Extra Condensed", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btEliminar.Location = new Point(224, 353);
+            btEliminar.Location = new Point(689, 140);
             btEliminar.Name = "btEliminar";
             btEliminar.Size = new Size(87, 37);
             btEliminar.TabIndex = 14;
@@ -188,11 +189,12 @@
             // 
             dgvListadoAutores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvListadoAutores.GridColor = SystemColors.ActiveBorder;
-            dgvListadoAutores.Location = new Point(330, 12);
+            dgvListadoAutores.Location = new Point(28, 217);
             dgvListadoAutores.Name = "dgvListadoAutores";
-            dgvListadoAutores.Size = new Size(458, 378);
+            dgvListadoAutores.Size = new Size(740, 221);
             dgvListadoAutores.TabIndex = 15;
             dgvListadoAutores.CellContentClick += dgvListadoAutores_CellContentClick;
+            dgvListadoAutores.RowHeaderMouseClick += dgvListadoAutores_RowHeaderMouseClick;
             // 
             // ABMAutor
             // 
