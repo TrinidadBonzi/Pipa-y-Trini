@@ -29,7 +29,7 @@ namespace CPresentacion
             List<dynamic> autors = _autorLogic.ObtenerAutoresParaListado();
             dgvListadoAutores.DataSource = autors;
         }
-        private void btGuardar_Click(object sender, EventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
             string nombre = tbNombreAlta.Text;
             string apellido = tbApellidoAlta.Text;
@@ -78,7 +78,7 @@ namespace CPresentacion
             tbBiografiaAlta.Text = dgvListadoAutores.Rows[e.RowIndex].Cells[6].Value == DBNull.Value ? "" : dgvListadoAutores.Rows[e.RowIndex].Cells[6].Value.ToString();
         }
 
-        private void btModificar_Click(object sender, EventArgs e)
+        private void btnModificar_Click(object sender, EventArgs e)
         {
             if (Id != -1)
             {
@@ -111,7 +111,7 @@ namespace CPresentacion
         }
 
 
-        private void btEliminar_Click(object sender, EventArgs e)
+        private void btnEliminar_Click(object sender, EventArgs e)
         {
             if (Id != -1)
             {
