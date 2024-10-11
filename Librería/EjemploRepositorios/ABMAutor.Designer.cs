@@ -40,10 +40,10 @@
             tbEmailAlta = new TextBox();
             tbTelefonoAlta = new TextBox();
             tbBiografiaAlta = new TextBox();
-            btGuardar = new Button();
-            btModificar = new Button();
-            btEliminar = new Button();
             dgvListadoAutores = new DataGridView();
+            btnGuardar = new Boton();
+            btnModificar = new Boton();
+            btnEliminar = new Boton();
             ((System.ComponentModel.ISupportInitialize)dgvListadoAutores).BeginInit();
             SuspendLayout();
             // 
@@ -51,9 +51,9 @@
             // 
             lbNombre.AutoSize = true;
             lbNombre.Font = new Font("Gloucester MT Extra Condensed", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbNombre.Location = new Point(20, 40);
+            lbNombre.Location = new Point(23, 53);
             lbNombre.Name = "lbNombre";
-            lbNombre.Size = new Size(57, 23);
+            lbNombre.Size = new Size(69, 28);
             lbNombre.TabIndex = 0;
             lbNombre.Text = "Nombre:";
             // 
@@ -61,9 +61,9 @@
             // 
             lbApellido.AutoSize = true;
             lbApellido.Font = new Font("Gloucester MT Extra Condensed", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbApellido.Location = new Point(20, 70);
+            lbApellido.Location = new Point(23, 93);
             lbApellido.Name = "lbApellido";
-            lbApellido.Size = new Size(58, 23);
+            lbApellido.Size = new Size(71, 28);
             lbApellido.TabIndex = 1;
             lbApellido.Text = "Apellido:";
             // 
@@ -71,9 +71,9 @@
             // 
             lbNacionalidad.AutoSize = true;
             lbNacionalidad.Font = new Font("Gloucester MT Extra Condensed", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbNacionalidad.Location = new Point(21, 100);
+            lbNacionalidad.Location = new Point(24, 133);
             lbNacionalidad.Name = "lbNacionalidad";
-            lbNacionalidad.Size = new Size(83, 23);
+            lbNacionalidad.Size = new Size(102, 28);
             lbNacionalidad.TabIndex = 2;
             lbNacionalidad.Text = "Nacionalidad:";
             // 
@@ -81,9 +81,9 @@
             // 
             lbEmail.AutoSize = true;
             lbEmail.Font = new Font("Gloucester MT Extra Condensed", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbEmail.Location = new Point(21, 132);
+            lbEmail.Location = new Point(24, 176);
             lbEmail.Name = "lbEmail";
-            lbEmail.Size = new Size(43, 23);
+            lbEmail.Size = new Size(54, 28);
             lbEmail.TabIndex = 3;
             lbEmail.Text = "Email:";
             // 
@@ -91,9 +91,9 @@
             // 
             lbTelefono.AutoSize = true;
             lbTelefono.Font = new Font("Gloucester MT Extra Condensed", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbTelefono.Location = new Point(21, 164);
+            lbTelefono.Location = new Point(24, 219);
             lbTelefono.Name = "lbTelefono";
-            lbTelefono.Size = new Size(61, 23);
+            lbTelefono.Size = new Size(75, 28);
             lbTelefono.TabIndex = 4;
             lbTelefono.Text = "Telefono:";
             // 
@@ -101,111 +101,143 @@
             // 
             lbBiografia.AutoSize = true;
             lbBiografia.Font = new Font("Gloucester MT Extra Condensed", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbBiografia.Location = new Point(275, 40);
+            lbBiografia.Location = new Point(314, 53);
             lbBiografia.Name = "lbBiografia";
-            lbBiografia.Size = new Size(62, 23);
+            lbBiografia.Size = new Size(78, 28);
             lbBiografia.TabIndex = 5;
             lbBiografia.Text = "Biografia:";
             // 
             // tbNombreAlta
             // 
-            tbNombreAlta.Location = new Point(83, 40);
+            tbNombreAlta.Location = new Point(95, 53);
+            tbNombreAlta.Margin = new Padding(3, 4, 3, 4);
             tbNombreAlta.Name = "tbNombreAlta";
-            tbNombreAlta.Size = new Size(147, 23);
+            tbNombreAlta.Size = new Size(167, 27);
             tbNombreAlta.TabIndex = 6;
             // 
             // tbApellidoAlta
             // 
-            tbApellidoAlta.Location = new Point(84, 71);
+            tbApellidoAlta.Location = new Point(96, 95);
+            tbApellidoAlta.Margin = new Padding(3, 4, 3, 4);
             tbApellidoAlta.Name = "tbApellidoAlta";
-            tbApellidoAlta.Size = new Size(147, 23);
+            tbApellidoAlta.Size = new Size(167, 27);
             tbApellidoAlta.TabIndex = 7;
             // 
             // tbNacionalidadAlta
             // 
-            tbNacionalidadAlta.Location = new Point(110, 100);
+            tbNacionalidadAlta.Location = new Point(126, 133);
+            tbNacionalidadAlta.Margin = new Padding(3, 4, 3, 4);
             tbNacionalidadAlta.Name = "tbNacionalidadAlta";
-            tbNacionalidadAlta.Size = new Size(147, 23);
+            tbNacionalidadAlta.Size = new Size(167, 27);
             tbNacionalidadAlta.TabIndex = 8;
             // 
             // tbEmailAlta
             // 
-            tbEmailAlta.Location = new Point(70, 133);
+            tbEmailAlta.Location = new Point(80, 177);
+            tbEmailAlta.Margin = new Padding(3, 4, 3, 4);
             tbEmailAlta.Name = "tbEmailAlta";
-            tbEmailAlta.Size = new Size(187, 23);
+            tbEmailAlta.Size = new Size(213, 27);
             tbEmailAlta.TabIndex = 9;
             // 
             // tbTelefonoAlta
             // 
-            tbTelefonoAlta.Location = new Point(83, 165);
+            tbTelefonoAlta.Location = new Point(95, 220);
+            tbTelefonoAlta.Margin = new Padding(3, 4, 3, 4);
             tbTelefonoAlta.Name = "tbTelefonoAlta";
-            tbTelefonoAlta.Size = new Size(147, 23);
+            tbTelefonoAlta.Size = new Size(167, 27);
             tbTelefonoAlta.TabIndex = 10;
             // 
             // tbBiografiaAlta
             // 
-            tbBiografiaAlta.Location = new Point(343, 44);
+            tbBiografiaAlta.Location = new Point(392, 59);
+            tbBiografiaAlta.Margin = new Padding(3, 4, 3, 4);
             tbBiografiaAlta.Multiline = true;
             tbBiografiaAlta.Name = "tbBiografiaAlta";
-            tbBiografiaAlta.Size = new Size(296, 144);
+            tbBiografiaAlta.Size = new Size(338, 191);
             tbBiografiaAlta.TabIndex = 11;
-            // 
-            // btGuardar
-            // 
-            btGuardar.BackColor = Color.FromArgb(255, 192, 192);
-            btGuardar.Font = new Font("Gloucester MT Extra Condensed", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btGuardar.Location = new Point(689, 48);
-            btGuardar.Name = "btGuardar";
-            btGuardar.Size = new Size(87, 37);
-            btGuardar.TabIndex = 12;
-            btGuardar.Text = "Guardar";
-            btGuardar.UseVisualStyleBackColor = false;
-            btGuardar.Click += btGuardar_Click;
-            // 
-            // btModificar
-            // 
-            btModificar.BackColor = Color.FromArgb(255, 192, 192);
-            btModificar.Font = new Font("Gloucester MT Extra Condensed", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btModificar.Location = new Point(689, 93);
-            btModificar.Name = "btModificar";
-            btModificar.Size = new Size(87, 37);
-            btModificar.TabIndex = 13;
-            btModificar.Text = "Modificar";
-            btModificar.UseVisualStyleBackColor = false;
-            btModificar.Click += btModificar_Click;
-            // 
-            // btEliminar
-            // 
-            btEliminar.BackColor = Color.FromArgb(255, 192, 192);
-            btEliminar.Font = new Font("Gloucester MT Extra Condensed", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btEliminar.Location = new Point(689, 140);
-            btEliminar.Name = "btEliminar";
-            btEliminar.Size = new Size(87, 37);
-            btEliminar.TabIndex = 14;
-            btEliminar.Text = "Eliminar";
-            btEliminar.UseVisualStyleBackColor = false;
-            btEliminar.Click += btEliminar_Click;
             // 
             // dgvListadoAutores
             // 
             dgvListadoAutores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvListadoAutores.GridColor = SystemColors.ActiveBorder;
-            dgvListadoAutores.Location = new Point(28, 217);
+            dgvListadoAutores.Location = new Point(32, 289);
+            dgvListadoAutores.Margin = new Padding(3, 4, 3, 4);
             dgvListadoAutores.Name = "dgvListadoAutores";
-            dgvListadoAutores.Size = new Size(740, 221);
+            dgvListadoAutores.RowHeadersWidth = 51;
+            dgvListadoAutores.Size = new Size(846, 295);
             dgvListadoAutores.TabIndex = 15;
             dgvListadoAutores.CellContentClick += dgvListadoAutores_CellContentClick;
             dgvListadoAutores.RowHeaderMouseClick += dgvListadoAutores_RowHeaderMouseClick;
             // 
+            // btnGuardar
+            // 
+            btnGuardar.BackColor = SystemColors.ActiveCaptionText;
+            btnGuardar.BackgroundColor = SystemColors.ActiveCaptionText;
+            btnGuardar.BorderColor = Color.DeepPink;
+            btnGuardar.BorderRadius = 45;
+            btnGuardar.BorderSize = 3;
+            btnGuardar.FlatAppearance.BorderSize = 0;
+            btnGuardar.FlatStyle = FlatStyle.Popup;
+            btnGuardar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnGuardar.ForeColor = Color.White;
+            btnGuardar.Location = new Point(764, 61);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(122, 47);
+            btnGuardar.TabIndex = 16;
+            btnGuardar.Text = "Guardar";
+            btnGuardar.TextColor = Color.White;
+            btnGuardar.UseVisualStyleBackColor = false;
+            btnGuardar.Click += btnGuardar_Click;
+            // 
+            // btnModificar
+            // 
+            btnModificar.BackColor = SystemColors.ActiveCaptionText;
+            btnModificar.BackgroundColor = SystemColors.ActiveCaptionText;
+            btnModificar.BorderColor = Color.DeepPink;
+            btnModificar.BorderRadius = 45;
+            btnModificar.BorderSize = 3;
+            btnModificar.FlatAppearance.BorderSize = 0;
+            btnModificar.FlatStyle = FlatStyle.Popup;
+            btnModificar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnModificar.ForeColor = Color.White;
+            btnModificar.Location = new Point(764, 133);
+            btnModificar.Name = "btnModificar";
+            btnModificar.Size = new Size(122, 47);
+            btnModificar.TabIndex = 16;
+            btnModificar.Text = "Modificar";
+            btnModificar.TextColor = Color.White;
+            btnModificar.UseVisualStyleBackColor = false;
+            btnModificar.Click += btnModificar_Click;
+            // 
+            // btnEliminar
+            // 
+            btnEliminar.BackColor = SystemColors.ActiveCaptionText;
+            btnEliminar.BackgroundColor = SystemColors.ActiveCaptionText;
+            btnEliminar.BorderColor = Color.DeepPink;
+            btnEliminar.BorderRadius = 45;
+            btnEliminar.BorderSize = 3;
+            btnEliminar.FlatAppearance.BorderSize = 0;
+            btnEliminar.FlatStyle = FlatStyle.Flat;
+            btnEliminar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnEliminar.ForeColor = Color.White;
+            btnEliminar.Location = new Point(764, 208);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(122, 47);
+            btnEliminar.TabIndex = 17;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.TextColor = Color.White;
+            btnEliminar.UseVisualStyleBackColor = false;
+            btnEliminar.Click += btnEliminar_Click;
+            // 
             // ABMAutor
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
+            Controls.Add(btnEliminar);
+            Controls.Add(btnModificar);
+            Controls.Add(btnGuardar);
             Controls.Add(dgvListadoAutores);
-            Controls.Add(btEliminar);
-            Controls.Add(btModificar);
-            Controls.Add(btGuardar);
             Controls.Add(tbBiografiaAlta);
             Controls.Add(tbTelefonoAlta);
             Controls.Add(tbEmailAlta);
@@ -218,6 +250,7 @@
             Controls.Add(lbNacionalidad);
             Controls.Add(lbApellido);
             Controls.Add(lbNombre);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ABMAutor";
             Text = "ABMAutor";
             ((System.ComponentModel.ISupportInitialize)dgvListadoAutores).EndInit();
@@ -239,9 +272,9 @@
         private TextBox tbEmailAlta;
         private TextBox tbTelefonoAlta;
         private TextBox tbBiografiaAlta;
-        private Button btGuardar;
-        private Button btModificar;
-        private Button btEliminar;
         private DataGridView dgvListadoAutores;
+        private Boton btnGuardar;
+        private Boton btnModificar;
+        private Boton btnEliminar;
     }
 }
