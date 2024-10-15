@@ -9,7 +9,8 @@ namespace CLogica.Contracts
 {
     public interface IClienteLogic
     {
-        Task<List<Cliente>> GetAll();
+        List<dynamic> ObtenerClientesParaListado();
+        List<Cliente> ObtenerClientes();
 
         void AltaCliente(Cliente nuevoCliente);
 

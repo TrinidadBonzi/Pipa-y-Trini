@@ -9,7 +9,9 @@ namespace CDatos.Repositories.Contracts
 {
     public interface IClienteRepository : IRepository<Cliente>
     {
-        Task<List<Cliente>> GetAll();
+        void CreateCliente(Cliente cliente);
+
+        List<Cliente> ObtenerClientes();
 
     }
 }

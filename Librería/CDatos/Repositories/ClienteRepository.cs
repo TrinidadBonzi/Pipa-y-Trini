@@ -17,17 +17,14 @@ namespace CDatos.Repositories
         {
 
         }
-
-        public async Task<List<Cliente>> GetAll()
+        public void CreateCliente(Cliente cliente)
         {
-            try
-            {
-                return await _context.Cliente.ToListAsync();
-            }
-            catch (Exception)
-            {
-                throw;
-            }
+            _context.Cliente.Attach(cliente);
+        }
+
+        public List<Cliente> ObtenerClientes()
+        {
+            return _context.Cliente.Include(a => a.Persona).ToList();
         }
     }
 }
