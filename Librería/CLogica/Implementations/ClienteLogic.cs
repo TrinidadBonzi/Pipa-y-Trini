@@ -11,20 +11,28 @@ using System.Threading.Tasks;
 namespace CLogica.Implementations
 {
     public class ClienteLogic : IClienteLogic
-    { 
-            private IClienteRepository _clienteRepository;
+    {
+        private IClienteRepository _clienteRepository;
 
-            public ClienteLogic(IClienteRepository clienteRepository)
-            {
-                _clienteRepository = clienteRepository;
-            }
+        private IPersonaLogic _personaLogic;
 
-            public async Task<List<Cliente>> GetAll()
-            {
-                return await _clienteRepository.GetAll();
-            }
+        public ClienteLogic(IClienteRepository ClienteRepository, IPersonaLogic personaLogic)
+        {
+            _clienteRepository = ClienteRepository;
+            _personaLogic = personaLogic;
+        }
 
-            public void AltaCliente(Cliente clienteNuevo)
+        public List<Cliente> ObtenerClientes()
+        {
+            return _clienteRepository.FindAll().ToList();
+        }
+
+        public List<dynamic> ObtenerClientesParaListado()
+        {
+            return _clienteRepository.ObtenerClientes().Select(a => new { IdAutor = a.IdCliente, Nombre = a.Persona.Nombre, Apellido = a.Persona.Apellido, Telefono = a.Persona.Telefono, Nacionalidad = a.Persona.Nacionalidad, Email = a.Persona.Email, }).ToList<dynamic>();
+        }
+
+        public void AltaCliente(Cliente clienteNuevo)
             {
                 List<string> camposErroneos = new List<string>();
                 if (string.IsNullOrEmpty(clienteNuevo.Persona.Nombre) || !IsValidName(clienteNuevo.Persona.Nombre))
