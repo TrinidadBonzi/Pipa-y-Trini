@@ -77,6 +77,7 @@
             btAutor.Text = "Gestionar Autores";
             btAutor.TextColor = Color.White;
             btAutor.UseVisualStyleBackColor = false;
+            btAutor.Click += btAutor_Click;
             // 
             // btClientes
             // 
@@ -120,7 +121,7 @@
             lblBienvenido.Font = new Font("Segoe UI", 20F);
             lblBienvenido.Location = new Point(354, 20);
             lblBienvenido.Name = "lblBienvenido";
-            lblBienvenido.Size = new Size(205, 46);
+            lblBienvenido.Size = new Size(165, 37);
             lblBienvenido.TabIndex = 6;
             lblBienvenido.Text = "¡Bienvenido!";
             // 
