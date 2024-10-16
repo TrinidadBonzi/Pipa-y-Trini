@@ -348,7 +348,7 @@
             label5.BackColor = Color.White;
             label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.DarkRed;
-            label5.Location = new Point(301, 202);
+            label5.Location = new Point(300, 202);
             label5.Name = "label5";
             label5.Size = new Size(16, 20);
             label5.TabIndex = 25;
