@@ -28,13 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menudeinicio));
             btEmpleados = new Boton();
             btAutor = new Boton();
             btClientes = new Boton();
             panelRedondeado1 = new PanelRedondeado();
+            pictureBox5 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            btnPrestamos = new Boton();
+            btnGestionarLibros = new Boton();
             lblBienvenido = new CustomLabel();
             btSalirSistema = new Boton();
             panelRedondeado1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // btEmpleados
@@ -90,7 +103,7 @@
             btClientes.FlatStyle = FlatStyle.Flat;
             btClientes.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btClientes.ForeColor = Color.White;
-            btClientes.Location = new Point(22, 172);
+            btClientes.Location = new Point(22, 170);
             btClientes.Margin = new Padding(3, 4, 3, 4);
             btClientes.Name = "btClientes";
             btClientes.Size = new Size(300, 41);
@@ -106,6 +119,13 @@
             panelRedondeado1.AutoSize = true;
             panelRedondeado1.BackColor = Color.MediumVioletRed;
             panelRedondeado1.BorderRadius = 80;
+            panelRedondeado1.Controls.Add(pictureBox5);
+            panelRedondeado1.Controls.Add(pictureBox4);
+            panelRedondeado1.Controls.Add(pictureBox3);
+            panelRedondeado1.Controls.Add(pictureBox1);
+            panelRedondeado1.Controls.Add(pictureBox2);
+            panelRedondeado1.Controls.Add(btnPrestamos);
+            panelRedondeado1.Controls.Add(btnGestionarLibros);
             panelRedondeado1.Controls.Add(btClientes);
             panelRedondeado1.Controls.Add(btAutor);
             panelRedondeado1.Controls.Add(btEmpleados);
@@ -115,6 +135,104 @@
             panelRedondeado1.Size = new Size(345, 372);
             panelRedondeado1.TabIndex = 5;
             // 
+            // pictureBox5
+            // 
+            pictureBox5.BackColor = Color.Black;
+            pictureBox5.BackgroundImage = (Image)resources.GetObject("pictureBox5.BackgroundImage");
+            pictureBox5.BackgroundImageLayout = ImageLayout.Center;
+            pictureBox5.Location = new Point(267, 236);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(30, 30);
+            pictureBox5.TabIndex = 7;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackColor = Color.Black;
+            pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
+            pictureBox4.BackgroundImageLayout = ImageLayout.Center;
+            pictureBox4.Location = new Point(276, 296);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(30, 30);
+            pictureBox4.TabIndex = 7;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackColor = Color.Black;
+            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
+            pictureBox3.BackgroundImageLayout = ImageLayout.Center;
+            pictureBox3.Location = new Point(267, 177);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(30, 30);
+            pictureBox3.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox3.TabIndex = 10;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Black;
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Center;
+            pictureBox1.Location = new Point(281, 113);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(30, 30);
+            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Black;
+            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
+            pictureBox2.BackgroundImageLayout = ImageLayout.Center;
+            pictureBox2.Location = new Point(267, 50);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(30, 30);
+            pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox2.TabIndex = 8;
+            pictureBox2.TabStop = false;
+            // 
+            // btnPrestamos
+            // 
+            btnPrestamos.BackColor = Color.Black;
+            btnPrestamos.BackgroundColor = Color.Black;
+            btnPrestamos.BorderColor = Color.DeepPink;
+            btnPrestamos.BorderRadius = 40;
+            btnPrestamos.BorderSize = 3;
+            btnPrestamos.FlatAppearance.BorderSize = 0;
+            btnPrestamos.FlatStyle = FlatStyle.Flat;
+            btnPrestamos.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnPrestamos.ForeColor = Color.White;
+            btnPrestamos.Location = new Point(22, 290);
+            btnPrestamos.Margin = new Padding(3, 4, 3, 4);
+            btnPrestamos.Name = "btnPrestamos";
+            btnPrestamos.Size = new Size(300, 41);
+            btnPrestamos.TabIndex = 6;
+            btnPrestamos.Text = "Gestionar Préstamos";
+            btnPrestamos.TextColor = Color.White;
+            btnPrestamos.UseVisualStyleBackColor = false;
+            // 
+            // btnGestionarLibros
+            // 
+            btnGestionarLibros.BackColor = Color.Black;
+            btnGestionarLibros.BackgroundColor = Color.Black;
+            btnGestionarLibros.BorderColor = Color.DeepPink;
+            btnGestionarLibros.BorderRadius = 40;
+            btnGestionarLibros.BorderSize = 3;
+            btnGestionarLibros.FlatAppearance.BorderSize = 0;
+            btnGestionarLibros.FlatStyle = FlatStyle.Flat;
+            btnGestionarLibros.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnGestionarLibros.ForeColor = Color.White;
+            btnGestionarLibros.Location = new Point(22, 231);
+            btnGestionarLibros.Margin = new Padding(3, 4, 3, 4);
+            btnGestionarLibros.Name = "btnGestionarLibros";
+            btnGestionarLibros.Size = new Size(300, 41);
+            btnGestionarLibros.TabIndex = 5;
+            btnGestionarLibros.Text = "Gestionar Libros";
+            btnGestionarLibros.TextColor = Color.White;
+            btnGestionarLibros.UseVisualStyleBackColor = false;
+            // 
             // lblBienvenido
             // 
             lblBienvenido.AutoSize = true;
@@ -122,7 +240,7 @@
             lblBienvenido.Font = new Font("Segoe UI", 20F);
             lblBienvenido.Location = new Point(354, 20);
             lblBienvenido.Name = "lblBienvenido";
-            lblBienvenido.Size = new Size(165, 37);
+            lblBienvenido.Size = new Size(205, 46);
             lblBienvenido.TabIndex = 6;
             lblBienvenido.Text = "¡Bienvenido!";
             // 
@@ -165,6 +283,12 @@
             Paint += Menudeinicio_Paint;
             Resize += Menudeinicio_Resize;
             panelRedondeado1.ResumeLayout(false);
+            panelRedondeado1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -177,5 +301,12 @@
         private PanelRedondeado panelRedondeado1;
         private CustomLabel lblBienvenido;
         private Boton btSalirSistema;
+        private Boton btnGestionarLibros;
+        private Boton btnPrestamos;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox4;
     }
 }

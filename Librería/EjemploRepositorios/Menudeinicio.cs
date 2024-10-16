@@ -45,6 +45,8 @@ namespace CPresentacion
                 e.Graphics.FillRectangle(brush, this.ClientRectangle);
             }
         }
+        
+        
 
         private void btSalirSistema_Click_1(object sender, EventArgs e)
         {
