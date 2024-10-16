@@ -25,7 +25,7 @@ namespace CLogica.Implementations
 
         public List<dynamic> ObtenerAutoresParaListado()
         {
-            return _autorRepository.ObtenerAutores().Select(a => new { IdAutor = a.IdAutor, Nombre = a.Persona.Nombre, Apellido = a.Persona.Apellido, Telefono = a.Persona.Telefono, Nacionalidad = a.Persona.Nacionalidad, Email = a.Persona.Email, Biografia = a.Biografia }).ToList<dynamic>();
+            return _autorRepository.ObtenerAutores().Select(a => new { IdAutor = a.IdAutor, Nombre = a.Persona.Nombre, Apellido = a.Persona.Apellido, Nacionalidad = a.Persona.Nacionalidad, Email = a.Persona.Email, Telefono = a.Persona.Telefono, Biografia = a.Biografia }).ToList<dynamic>();
         }
 
         public void AltaAutor(string nombre, string apellido, string nacionalidad, string email, string telefono, string biografia)
