@@ -95,6 +95,18 @@ namespace CPresentacion
             ambautor.Show();
             this.Hide();
         }
+
+        private void btClientes_Click(object sender, EventArgs e)
+        {
+            LibreriaContext context = new LibreriaContext();
+            IPersonaRepository personaRepository = new PersonaRepository(context);
+            IPersonaLogic personaLogic = new PersonaLogic(personaRepository);
+            IClienteRepository clienteRepository = new ClienteRepository(context);
+            IClienteLogic clienteLogic = new ClienteLogic(clienteRepository, personaLogic);
+            ABMCliente ambcliente = new ABMCliente(clienteLogic);
+            ambcliente.Show();
+            this.Hide();
+        }
     }
 }
 

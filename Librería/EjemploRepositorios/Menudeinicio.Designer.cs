@@ -98,6 +98,7 @@
             btClientes.Text = "Gestionar Clientes";
             btClientes.TextColor = Color.White;
             btClientes.UseVisualStyleBackColor = false;
+            btClientes.Click += btClientes_Click;
             // 
             // panelRedondeado1
             // 
