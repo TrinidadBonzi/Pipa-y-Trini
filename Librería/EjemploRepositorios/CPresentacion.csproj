@@ -10,10 +10,14 @@
 
   <ItemGroup>
     <None Remove="Fuente\Grandson.otf" />
+    <None Remove="Resources\line-md--account %282%29.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Fuente\Grandson.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\line-md--account (2).png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
