@@ -46,14 +46,18 @@
             btGuardarCliente = new Boton();
             btActualizar = new Boton();
             btEliminarCliente = new Boton();
+            pictureBox1 = new PictureBox();
+            cbIvaCliente = new ComboBox();
+            lbIVA = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvListadoClientes).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lbNombreCliente
             // 
             lbNombreCliente.AutoSize = true;
             lbNombreCliente.Font = new Font("Gloucester MT Extra Condensed", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbNombreCliente.Location = new Point(39, 18);
+            lbNombreCliente.Location = new Point(48, 22);
             lbNombreCliente.Name = "lbNombreCliente";
             lbNombreCliente.Size = new Size(57, 23);
             lbNombreCliente.TabIndex = 0;
@@ -61,14 +65,14 @@
             // 
             // tbNombreCliente
             // 
-            tbNombreCliente.Location = new Point(102, 18);
+            tbNombreCliente.Location = new Point(111, 22);
             tbNombreCliente.Name = "tbNombreCliente";
             tbNombreCliente.Size = new Size(152, 23);
             tbNombreCliente.TabIndex = 1;
             // 
             // tbApellidoCliente
             // 
-            tbApellidoCliente.Location = new Point(102, 47);
+            tbApellidoCliente.Location = new Point(111, 51);
             tbApellidoCliente.Name = "tbApellidoCliente";
             tbApellidoCliente.Size = new Size(152, 23);
             tbApellidoCliente.TabIndex = 3;
@@ -77,7 +81,7 @@
             // 
             lbApellidoCliente.AutoSize = true;
             lbApellidoCliente.Font = new Font("Gloucester MT Extra Condensed", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbApellidoCliente.Location = new Point(39, 47);
+            lbApellidoCliente.Location = new Point(48, 51);
             lbApellidoCliente.Name = "lbApellidoCliente";
             lbApellidoCliente.Size = new Size(59, 23);
             lbApellidoCliente.TabIndex = 2;
@@ -85,7 +89,7 @@
             // 
             // tbDocumentoCliente
             // 
-            tbDocumentoCliente.Location = new Point(119, 76);
+            tbDocumentoCliente.Location = new Point(128, 80);
             tbDocumentoCliente.Name = "tbDocumentoCliente";
             tbDocumentoCliente.Size = new Size(152, 23);
             tbDocumentoCliente.TabIndex = 5;
@@ -94,7 +98,7 @@
             // 
             lbDocumentoCliente.AutoSize = true;
             lbDocumentoCliente.Font = new Font("Gloucester MT Extra Condensed", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbDocumentoCliente.Location = new Point(39, 76);
+            lbDocumentoCliente.Location = new Point(48, 80);
             lbDocumentoCliente.Name = "lbDocumentoCliente";
             lbDocumentoCliente.Size = new Size(77, 23);
             lbDocumentoCliente.TabIndex = 4;
@@ -102,7 +106,7 @@
             // 
             // tbNacionalidadCliente
             // 
-            tbNacionalidadCliente.Location = new Point(120, 112);
+            tbNacionalidadCliente.Location = new Point(129, 116);
             tbNacionalidadCliente.Name = "tbNacionalidadCliente";
             tbNacionalidadCliente.Size = new Size(152, 23);
             tbNacionalidadCliente.TabIndex = 7;
@@ -111,7 +115,7 @@
             // 
             lbNacionalidadCliente.AutoSize = true;
             lbNacionalidadCliente.Font = new Font("Gloucester MT Extra Condensed", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbNacionalidadCliente.Location = new Point(38, 112);
+            lbNacionalidadCliente.Location = new Point(47, 116);
             lbNacionalidadCliente.Name = "lbNacionalidadCliente";
             lbNacionalidadCliente.Size = new Size(83, 23);
             lbNacionalidadCliente.TabIndex = 6;
@@ -119,7 +123,7 @@
             // 
             // tbEmailCliente
             // 
-            tbEmailCliente.Location = new Point(103, 145);
+            tbEmailCliente.Location = new Point(112, 149);
             tbEmailCliente.Name = "tbEmailCliente";
             tbEmailCliente.Size = new Size(181, 23);
             tbEmailCliente.TabIndex = 9;
@@ -128,7 +132,7 @@
             // 
             lbEmailCliente.AutoSize = true;
             lbEmailCliente.Font = new Font("Gloucester MT Extra Condensed", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbEmailCliente.Location = new Point(40, 145);
+            lbEmailCliente.Location = new Point(49, 149);
             lbEmailCliente.Name = "lbEmailCliente";
             lbEmailCliente.Size = new Size(43, 23);
             lbEmailCliente.TabIndex = 8;
@@ -136,7 +140,7 @@
             // 
             // tbTelefonoCliente
             // 
-            tbTelefonoCliente.Location = new Point(352, 18);
+            tbTelefonoCliente.Location = new Point(361, 22);
             tbTelefonoCliente.Name = "tbTelefonoCliente";
             tbTelefonoCliente.Size = new Size(152, 23);
             tbTelefonoCliente.TabIndex = 11;
@@ -145,7 +149,7 @@
             // 
             lbTelefonoCliente.AutoSize = true;
             lbTelefonoCliente.Font = new Font("Gloucester MT Extra Condensed", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbTelefonoCliente.Location = new Point(289, 18);
+            lbTelefonoCliente.Location = new Point(298, 22);
             lbTelefonoCliente.Name = "lbTelefonoCliente";
             lbTelefonoCliente.Size = new Size(62, 23);
             lbTelefonoCliente.TabIndex = 10;
@@ -155,7 +159,7 @@
             // 
             lbSocioCliente.AutoSize = true;
             lbSocioCliente.Font = new Font("Gloucester MT Extra Condensed", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbSocioCliente.Location = new Point(290, 51);
+            lbSocioCliente.Location = new Point(299, 55);
             lbSocioCliente.Name = "lbSocioCliente";
             lbSocioCliente.Size = new Size(44, 23);
             lbSocioCliente.TabIndex = 12;
@@ -164,7 +168,8 @@
             // cbSocioCliente
             // 
             cbSocioCliente.FormattingEnabled = true;
-            cbSocioCliente.Location = new Point(340, 51);
+            cbSocioCliente.Items.AddRange(new object[] { "Sí", "No" });
+            cbSocioCliente.Location = new Point(349, 55);
             cbSocioCliente.Name = "cbSocioCliente";
             cbSocioCliente.Size = new Size(134, 23);
             cbSocioCliente.TabIndex = 13;
@@ -176,6 +181,8 @@
             dgvListadoClientes.Name = "dgvListadoClientes";
             dgvListadoClientes.Size = new Size(736, 242);
             dgvListadoClientes.TabIndex = 14;
+            dgvListadoClientes.CellContentClick += dgvListadoClientes_CellContentClick;
+            dgvListadoClientes.RowHeaderMouseClick += dgvListadoClientes_RowHeaderMouseClick;
             // 
             // btGuardarCliente
             // 
@@ -215,6 +222,7 @@
             btActualizar.Text = "Actualizar";
             btActualizar.TextColor = Color.White;
             btActualizar.UseVisualStyleBackColor = false;
+            btActualizar.Click += btActualizar_Click;
             // 
             // btEliminarCliente
             // 
@@ -234,12 +242,46 @@
             btEliminarCliente.Text = "Eliminar";
             btEliminarCliente.TextColor = Color.White;
             btEliminarCliente.UseVisualStyleBackColor = false;
+            btEliminarCliente.Click += btEliminarCliente_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.download_removebg_preview1;
+            pictureBox1.Location = new Point(2, 1);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(42, 47);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 18;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
+            // cbIvaCliente
+            // 
+            cbIvaCliente.FormattingEnabled = true;
+            cbIvaCliente.Items.AddRange(new object[] { "Sí", "No" });
+            cbIvaCliente.Location = new Point(349, 88);
+            cbIvaCliente.Name = "cbIvaCliente";
+            cbIvaCliente.Size = new Size(134, 23);
+            cbIvaCliente.TabIndex = 20;
+            // 
+            // lbIVA
+            // 
+            lbIVA.AutoSize = true;
+            lbIVA.Font = new Font("Gloucester MT Extra Condensed", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbIVA.Location = new Point(304, 87);
+            lbIVA.Name = "lbIVA";
+            lbIVA.Size = new Size(35, 23);
+            lbIVA.TabIndex = 19;
+            lbIVA.Text = "IVA:";
             // 
             // ABMCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(cbIvaCliente);
+            Controls.Add(lbIVA);
+            Controls.Add(pictureBox1);
             Controls.Add(btEliminarCliente);
             Controls.Add(btActualizar);
             Controls.Add(btGuardarCliente);
@@ -261,6 +303,7 @@
             Name = "ABMCliente";
             Text = "ABMCliente";
             ((System.ComponentModel.ISupportInitialize)dgvListadoClientes).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -285,5 +328,8 @@
         private Boton btGuardarCliente;
         private Boton btActualizar;
         private Boton btEliminarCliente;
+        private PictureBox pictureBox1;
+        private ComboBox cbIvaCliente;
+        private Label lbIVA;
     }
 }

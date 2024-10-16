@@ -1,4 +1,5 @@
-﻿using CDatos.Repositories.Contracts;
+﻿using CDatos.Repositories;
+using CDatos.Repositories.Contracts;
 using CEntidades.Entidades;
 using CLogica.Contracts;
 using Microsoft.IdentityModel.Tokens;
@@ -29,124 +30,103 @@ namespace CLogica.Implementations
 
         public List<dynamic> ObtenerClientesParaListado()
         {
-            return _clienteRepository.ObtenerClientes().Select(a => new { IdAutor = a.IdCliente, Nombre = a.Persona.Nombre, Apellido = a.Persona.Apellido, Telefono = a.Persona.Telefono, Nacionalidad = a.Persona.Nacionalidad, Email = a.Persona.Email, }).ToList<dynamic>();
+            return _clienteRepository.ObtenerClientes().Select(a => new { IdCliente = a.IdCliente, Nombre = a.Persona.Nombre, Apellido = a.Persona.Apellido, Documento = a.Persona.Documento, Telefono = a.Persona.Telefono, Nacionalidad = a.Persona.Nacionalidad, Email = a.Persona.Email, Socio = a.EsSocio, Iva = a.PagaIVA}).ToList<dynamic>();
         }
 
-        public void AltaCliente(Cliente clienteNuevo)
+        public void AltaCliente(string nombre, string apellido, string documento, string nacionalidad, string email, string telefono, string socio, string iva)
+        {
+            try
             {
-                List<string> camposErroneos = new List<string>();
-                if (string.IsNullOrEmpty(clienteNuevo.Persona.Nombre) || !IsValidName(clienteNuevo.Persona.Nombre))
-                    camposErroneos.Add("Nombre");
-
-                if (string.IsNullOrEmpty(clienteNuevo.Persona.Apellido) || !IsValidName(clienteNuevo.Persona.Apellido))
-                    camposErroneos.Add("Apellido");
-
-                if (string.IsNullOrEmpty(clienteNuevo.Persona.Documento) || !IsValidDocumento(clienteNuevo.Persona.Documento) || _clienteRepository.FindByCondition(p => p.Persona.Documento == clienteNuevo.Persona.Documento).Count() != 0)
-                    camposErroneos.Add("Documento");
-
-                if (string.IsNullOrEmpty(clienteNuevo.Persona.Telefono) || !IsValidTelefono(clienteNuevo.Persona.Telefono))
-                    camposErroneos.Add("Teléfono");
-
-                if (string.IsNullOrEmpty(clienteNuevo.Persona.Email) || !IsValidEmail(clienteNuevo.Persona.Email))
-                    camposErroneos.Add("Email");
-
-                if (!clienteNuevo.EsSocio.ToString().Equals("true", StringComparison.OrdinalIgnoreCase) && !clienteNuevo.EsSocio.ToString().Equals("false", StringComparison.OrdinalIgnoreCase))
-                camposErroneos.Add("EsSocio");
-
-                if (!clienteNuevo.PagaIVA.ToString().Equals("true", StringComparison.OrdinalIgnoreCase) && !clienteNuevo.PagaIVA.ToString().Equals("false", StringComparison.OrdinalIgnoreCase))
-                camposErroneos.Add("PagaIVA");
-
-            if (camposErroneos.Count > 0)
+                
+                Persona personaNueva = new Persona()
                 {
-                    throw new ArgumentException("Los siguientes campos son inválidos: ", string.Join(", ", camposErroneos));
-                }
+                    Nombre = nombre,
+                    Apellido = apellido,
+                    Documento = documento,
+                    Telefono = telefono,
+                    Email = email,
+                    Nacionalidad = nacionalidad
+                };
 
-                Cliente cliente = new Cliente();
-                cliente.Persona.Nombre = clienteNuevo.Persona.Nombre;
-                cliente.Persona.Apellido = clienteNuevo.Persona.Apellido;
-                cliente.Persona.Nacionalidad = clienteNuevo.Persona.Nacionalidad;
-                cliente.Persona.Documento = clienteNuevo.Persona.Documento;
-                cliente.Persona.Telefono = clienteNuevo.Persona.Telefono;
-                cliente.Persona.Email = clienteNuevo.Persona.Email;
-                cliente.Persona.TipoDocumento = clienteNuevo.Persona.TipoDocumento;
-                cliente.EsSocio = clienteNuevo.EsSocio;
-                cliente.PagaIVA = clienteNuevo.PagaIVA;
+               
+                Persona persona = _personaLogic.AltaPersona(personaNueva);
 
+                
+                bool esSocio = socio.Equals("Sí", StringComparison.OrdinalIgnoreCase); 
+                bool pagaIVA = iva.Equals("Sí", StringComparison.OrdinalIgnoreCase); 
 
-                _clienteRepository.Create(cliente);
-                _clienteRepository.Save();
+              
+                Cliente clienteNuevo = new Cliente()
+                {
+                    Persona = persona,
+                    EsSocio = esSocio,
+                    PagaIVA = pagaIVA,
+                };
+
+                
+
+               
+                _clienteRepository.CreateCliente(clienteNuevo);
+                _clienteRepository.Save(); // Asegúrate de que este método esté implementado en tu repositorio
+            }
+            catch (Exception ex)
+            {
+             
+                throw new Exception("Error al dar de alta el cliente: " + ex.Message, ex);
+            }
+        }
+
+        public void ActualizarCliente(int id, string nombre, string apellido, string documento, string nacionalidad, string email, string telefono, string socio, string iva)
+        {
+            // Asegúrate de que estás buscando por IdCliente
+            Cliente? cliente = _clienteRepository.FindByCondition(a => a.IdCliente == id).FirstOrDefault();
+
+            if (cliente == null)
+            {
+                throw new ArgumentNullException("No se ha encontrado un cliente con ese ID.");
             }
 
-            public void ActualizarCliente(string documento, Cliente clienteActualizar)
+            // Actualiza los campos de cliente
+            cliente.Persona.Nombre = nombre;
+            cliente.Persona.Apellido = apellido;
+            cliente.Persona.Documento = documento;
+            cliente.Persona.Nacionalidad = nacionalidad;
+            cliente.Persona.Email = email;
+            cliente.Persona.Telefono = telefono;
+
+            cliente.EsSocio = bool.TryParse(socio, out bool esSocio) && esSocio;
+            cliente.PagaIVA = bool.TryParse(iva, out bool pagaIva) && pagaIva;
+
+            _clienteRepository.Update(cliente);
+            _clienteRepository.Save();
+        }
+
+
+        public void EliminarCliente(string id)
+        {
+            if (string.IsNullOrEmpty(id))
+                throw new ArgumentException("El ID ingresado es inválido.");
+
+            // Asegúrate de que 'id' se refiere al IdCliente y no al IdPersona
+            if (!int.TryParse(id, out int idCliente))
+                throw new ArgumentException("El ID proporcionado no es un número válido.");
+
+            // Busca al cliente usando IdCliente en lugar de IdPersona
+            Cliente? cliente = _clienteRepository.FindByCondition(p => p.IdCliente == idCliente).FirstOrDefault();
+
+            if (cliente == null)
             {
-                List<string> camposErroneos = new List<string>();
-                if (string.IsNullOrEmpty(clienteActualizar.Persona.Nombre) || !IsValidName(clienteActualizar.Persona.Nombre))
-                    camposErroneos.Add("Nombre");
-
-                if (string.IsNullOrEmpty(clienteActualizar.Persona.Apellido) || !IsValidName(clienteActualizar.Persona.Apellido))
-                    camposErroneos.Add("Apellido");
-
-                if (string.IsNullOrEmpty(clienteActualizar.Persona.Documento) || !IsValidDocumento(clienteActualizar.Persona.Documento))
-                    camposErroneos.Add("Documento");
-
-                if (string.IsNullOrEmpty(clienteActualizar.Persona.Telefono) || !IsValidTelefono(clienteActualizar.Persona.Telefono))
-                    camposErroneos.Add("Teléfono");
-
-                if (string.IsNullOrEmpty(clienteActualizar.Persona.Email) || !IsValidEmail(clienteActualizar.Persona.Email))
-                    camposErroneos.Add("Email");
-
-                if (!clienteActualizar.EsSocio.ToString().Equals("true", StringComparison.OrdinalIgnoreCase) && !clienteActualizar.EsSocio.ToString().Equals("false", StringComparison.OrdinalIgnoreCase))
-                camposErroneos.Add("EsSocio");
-
-                if (!clienteActualizar.PagaIVA.ToString().Equals("true", StringComparison.OrdinalIgnoreCase) && !clienteActualizar.PagaIVA.ToString().Equals("false", StringComparison.OrdinalIgnoreCase))
-                camposErroneos.Add("PagaIVA");
-
-            if (camposErroneos.Count > 0)
-                {
-                    throw new ArgumentException("Los siguientes campos son inválidos: ", string.Join(", ", camposErroneos));
-                }
-
-                if (string.IsNullOrEmpty(documento) || !IsValidDocumento(documento))
-                    throw new ArgumentException("El documento ingresado es inválido.");
-
-                Cliente? cliente = _clienteRepository.FindByCondition(p => p.Persona.Documento == documento).FirstOrDefault();
-
-                if (cliente == null)
-                {
-                    throw new ArgumentNullException("No se ha encontrado un cliente con ese documento");
-                }
-
-                cliente.Persona.Nombre = clienteActualizar.Persona.Nombre;
-                cliente.Persona.Apellido = clienteActualizar.Persona.Apellido;
-                cliente.Persona.Nacionalidad = clienteActualizar.Persona.Nacionalidad;
-                cliente.Persona.Documento = clienteActualizar.Persona.Documento;
-                cliente.Persona.Telefono = clienteActualizar.Persona.Telefono;
-                cliente.Persona.Email = clienteActualizar.Persona.Email;
-                cliente.Persona.TipoDocumento = clienteActualizar.Persona.TipoDocumento;
-                cliente.EsSocio = clienteActualizar.EsSocio;
-                cliente.PagaIVA = clienteActualizar.PagaIVA;
-
-                _clienteRepository.Create(cliente);
-                _clienteRepository.Save();
+                throw new ArgumentNullException("No se ha encontrado un cliente con ese ID.");
             }
 
-            public void EliminarCliente(string documento)
-            {
-                if (string.IsNullOrEmpty(documento) || !IsValidDocumento(documento))
-                    throw new ArgumentException("El documento ingresado es inválido.");
+            // Aquí eliminas al cliente
+            _clienteRepository.Delete(cliente);
+            _clienteRepository.Save();
+        }
 
-                Cliente? cliente = _clienteRepository.FindByCondition(p => p.Persona.Documento == documento).FirstOrDefault();
 
-                if (cliente == null)
-                {
-                    throw new ArgumentNullException("No se ha encontrado un cliente con ese documento");
-                }
-                _clienteRepository.Delete(cliente);
-                _clienteRepository.Save();
-            }
-
-            #region validaciones
-            private bool ContainsInvalidCharacter(string text)
+        #region validaciones
+        private bool ContainsInvalidCharacter(string text)
             {
                 char[] caracteres = { '!', '"', '#', '$', '%', '/', '(', ')', '=', '.', ',' };
                 return caracteres.Any(c => text.Contains(c));

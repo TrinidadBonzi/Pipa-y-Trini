@@ -12,11 +12,11 @@ namespace CLogica.Contracts
         List<dynamic> ObtenerClientesParaListado();
         List<Cliente> ObtenerClientes();
 
-        void AltaCliente(Cliente nuevoCliente);
+        void AltaCliente(string nombre, string apellido, string documento, string nacionalidad, string email, string telefono, string socio, string iva);
 
-        void ActualizarCliente(string documento, Cliente clienteActualizar);
+        void ActualizarCliente(int id, string nombre, string apellido, string documento, string nacionalidad, string email, string telefono, string socio, string iva);
 
-        void EliminarCliente(string documento);
+        void EliminarCliente(string id);
 
     }
 }
