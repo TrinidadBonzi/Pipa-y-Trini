@@ -131,17 +131,17 @@ namespace CPresentacion
         {
             if (Id != -1)
             {
-               
+
                 var confirmResult = MessageBox.Show("¿Estás seguro de eliminar este cliente?", "Confirmar Eliminación", MessageBoxButtons.YesNo);
 
                 if (confirmResult == DialogResult.Yes)
                 {
                     try
                     {
-                        
+
                         _clienteLogic.EliminarCliente(Id.ToString()); // Convertimos 'Id' a string si es necesario.
 
-                        
+
                         MessageBox.Show("El cliente ha sido eliminado con éxito.");
                         CargarListadoClientes();
                     }
@@ -156,5 +156,6 @@ namespace CPresentacion
                 MessageBox.Show("Selecciona un autor para eliminar.");
             }
         }
+
     }
 }
