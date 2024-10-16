@@ -1,10 +1,15 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
+﻿using CDatos.Repositories.Contracts;
+using CDatos.Repositories;
+using CLogica.Contracts;
+using CLogica.Implementations;
+using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.IO;
 using System.Windows.Forms;
+using CDatos.Contexts;
 
 namespace CPresentacion
 {
@@ -66,6 +71,29 @@ namespace CPresentacion
             }
 
             lblBienvenido.Location = new Point((ClientSize.Width - lblBienvenido.Width) / 2, lblBienvenido.Location.Y);
+        }
+
+        private void btAutor_Click(object sender, EventArgs e)
+        {
+            // Crear instancia de LibreriaContext
+            LibreriaContext context = new LibreriaContext();
+
+            // Crear instancia de IPersonaRepository
+            IPersonaRepository personaRepository = new PersonaRepository(context);
+
+            // Crear instancia de PersonaLogic pasando personaRepository
+            IPersonaLogic personaLogic = new PersonaLogic(personaRepository);
+
+            // Crear instancia de IAutorRepository
+            IAutorRepository autorRepository = new AutorRepository(context);
+
+            // Crear instancia de AutorLogic pasando autorRepository y personaLogic
+            IAutorLogic autorLogic = new AutorLogic(autorRepository, personaLogic);
+
+            // Ahora pasas autorLogic a ABMAutor
+            ABMAutor ambautor = new ABMAutor(autorLogic);
+            ambautor.Show();
+            this.Hide();
         }
     }
 }

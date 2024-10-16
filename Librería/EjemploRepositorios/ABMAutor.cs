@@ -141,6 +141,11 @@ namespace CPresentacion
             }
         }
 
-
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Menudeinicio menuinicio = new Menudeinicio();
+            menuinicio.Show();
+            this.Hide();
+        }
     }
 }
