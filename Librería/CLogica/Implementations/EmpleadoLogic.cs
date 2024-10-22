@@ -12,10 +12,12 @@ namespace CLogica.Implementations
     public class EmpleadoLogic : IEmpleadoLogic
     { 
         private IEmpleadoRepository _empleadoRepository;
+        private IPersonaLogic _personaLogic;
 
-        public EmpleadoLogic(IEmpleadoRepository empleadorepository)
+        public EmpleadoLogic(IEmpleadoRepository empleadorepository, IPersonaLogic personaLogic)
         {
             _empleadoRepository = empleadorepository;
+            _personaLogic = personaLogic;
         }
 
         public async Task<List<Empleado>> GetAll()

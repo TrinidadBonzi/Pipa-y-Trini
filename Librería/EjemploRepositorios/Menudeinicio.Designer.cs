@@ -69,6 +69,7 @@
             btEmpleados.Text = "Gestionar Empleados";
             btEmpleados.TextColor = Color.White;
             btEmpleados.UseVisualStyleBackColor = false;
+            btEmpleados.Click += btEmpleados_Click;
             // 
             // btAutor
             // 
@@ -240,7 +241,7 @@
             lblBienvenido.Font = new Font("Segoe UI", 20F);
             lblBienvenido.Location = new Point(354, 20);
             lblBienvenido.Name = "lblBienvenido";
-            lblBienvenido.Size = new Size(205, 46);
+            lblBienvenido.Size = new Size(165, 37);
             lblBienvenido.TabIndex = 6;
             lblBienvenido.Text = "¡Bienvenido!";
             // 

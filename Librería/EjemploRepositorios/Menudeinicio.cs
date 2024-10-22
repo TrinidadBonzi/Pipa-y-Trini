@@ -45,8 +45,8 @@ namespace CPresentacion
                 e.Graphics.FillRectangle(brush, this.ClientRectangle);
             }
         }
-        
-        
+
+
 
         private void btSalirSistema_Click_1(object sender, EventArgs e)
         {
@@ -107,6 +107,18 @@ namespace CPresentacion
             IClienteLogic clienteLogic = new ClienteLogic(clienteRepository, personaLogic);
             ABMCliente ambcliente = new ABMCliente(clienteLogic);
             ambcliente.Show();
+            this.Hide();
+        }
+
+        private void btEmpleados_Click(object sender, EventArgs e)
+        {
+            LibreriaContext context = new LibreriaContext();
+            IPersonaRepository personaRepository = new PersonaRepository(context);
+            IPersonaLogic personaLogic = new PersonaLogic(personaRepository);
+            IEmpleadoRepository empleadoRepository = new EmpleadoRepository(context);
+            IEmpleadoLogic empleadoLogic = new EmpleadoLogic(empleadoRepository, personaLogic);
+            ABMEmpleado ambempleado = new ABMEmpleado(empleadoLogic);
+            ambempleado.Show();
             this.Hide();
         }
     }
