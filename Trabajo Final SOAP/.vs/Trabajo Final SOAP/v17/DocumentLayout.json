@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Trabajo Final SOAP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F6F6FE7E-D7A9-4274-B74B-D42E8C1E4CD0}|Vista\\Vista.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\trabajo final soap\\vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6F6FE7E-D7A9-4274-B74B-D42E8C1E4CD0}|Vista\\Vista.csproj|solutionrelative:vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25CC00E2-E8D9-45F8-AC5C-B9D78ED291B0}|Negocios\\Negocios.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\trabajo final soap\\negocios\\tipodocumento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25CC00E2-E8D9-45F8-AC5C-B9D78ED291B0}|Negocios\\Negocios.csproj|solutionrelative:negocios\\tipodocumento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F9CDD8A-9A22-4E24-99CA-F2FD3DF4BAEC}|WebApplication1\\WebApplication1.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\trabajo final soap\\webapplication1\\webservice1.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F9CDD8A-9A22-4E24-99CA-F2FD3DF4BAEC}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\webservice1.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6F6FE7E-D7A9-4274-B74B-D42E8C1E4CD0}|Vista\\Vista.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\trabajo final soap\\vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F6F6FE7E-D7A9-4274-B74B-D42E8C1E4CD0}|Vista\\Vista.csproj|solutionrelative:vista\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Trabajo Final SOAP\\Vista\\Form1.cs",
+              "RelativeDocumentMoniker": "Vista\\Form1.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Trabajo Final SOAP\\Vista\\Form1.cs",
+              "RelativeToolTip": "Vista\\Form1.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T20:40:36.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Trabajo Final SOAP\\Vista\\Form1.cs",
+              "RelativeDocumentMoniker": "Vista\\Form1.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Trabajo Final SOAP\\Vista\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vista\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T20:40:34.413Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TipoDocumento.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Trabajo Final SOAP\\Negocios\\TipoDocumento.cs",
+              "RelativeDocumentMoniker": "Negocios\\TipoDocumento.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Trabajo Final SOAP\\Negocios\\TipoDocumento.cs",
+              "RelativeToolTip": "Negocios\\TipoDocumento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T20:27:20.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WebService1.asmx.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Trabajo Final SOAP\\WebApplication1\\WebService1.asmx.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\WebService1.asmx.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Trabajo Final SOAP\\WebApplication1\\WebService1.asmx.cs",
+              "RelativeToolTip": "WebApplication1\\WebService1.asmx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T20:11:32.086Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Vista\bin\Debug\Vista.exe.config
+C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Vista\bin\Debug\Vista.exe
+C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Vista\bin\Debug\Vista.pdb
+C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Vista\bin\Debug\WebApplication1.dll
+C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Vista\bin\Debug\Negocios.dll
+C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Vista\bin\Debug\WebApplication1.pdb
+C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Vista\bin\Debug\WebApplication1.dll.config
+C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Vista\bin\Debug\Negocios.pdb
+C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Vista\obj\Debug\Vista.csproj.AssemblyReference.cache
+C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Vista\obj\Debug\Vista.Form1.resources
+C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Vista\obj\Debug\Vista.Properties.Resources.resources
+C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Vista\obj\Debug\Vista.csproj.GenerateResource.cache
+C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Vista\obj\Debug\Vista.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Vista\obj\Debug\Vista.csproj.Up2Date
+C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Vista\obj\Debug\Vista.exe
+C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Vista\obj\Debug\Vista.pdb

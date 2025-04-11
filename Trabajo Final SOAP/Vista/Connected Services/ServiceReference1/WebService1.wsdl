@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="agregarTipoDocumento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tipo" type="tns:TipoDocumento" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TipoDocumento">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="codigoDocumento" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcionDocumento" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="agregarTipoDocumentoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agregarTipoDocumentoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dameListaTipoDocumentos">
+        <s:complexType />
+      </s:element>
+      <s:element name="dameListaTipoDocumentosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dameListaTipoDocumentosResult" type="tns:ArrayOfTipoDocumento" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTipoDocumento">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TipoDocumento" nillable="true" type="tns:TipoDocumento" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="agregarTipoDocumentoSoapIn">
+    <wsdl:part name="parameters" element="tns:agregarTipoDocumento" />
+  </wsdl:message>
+  <wsdl:message name="agregarTipoDocumentoSoapOut">
+    <wsdl:part name="parameters" element="tns:agregarTipoDocumentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="dameListaTipoDocumentosSoapIn">
+    <wsdl:part name="parameters" element="tns:dameListaTipoDocumentos" />
+  </wsdl:message>
+  <wsdl:message name="dameListaTipoDocumentosSoapOut">
+    <wsdl:part name="parameters" element="tns:dameListaTipoDocumentosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebService1Soap">
+    <wsdl:operation name="agregarTipoDocumento">
+      <wsdl:input message="tns:agregarTipoDocumentoSoapIn" />
+      <wsdl:output message="tns:agregarTipoDocumentoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dameListaTipoDocumentos">
+      <wsdl:input message="tns:dameListaTipoDocumentosSoapIn" />
+      <wsdl:output message="tns:dameListaTipoDocumentosSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebService1Soap" type="tns:WebService1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="agregarTipoDocumento">
+      <soap:operation soapAction="http://tempuri.org/agregarTipoDocumento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dameListaTipoDocumentos">
+      <soap:operation soapAction="http://tempuri.org/dameListaTipoDocumentos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService1Soap12" type="tns:WebService1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="agregarTipoDocumento">
+      <soap12:operation soapAction="http://tempuri.org/agregarTipoDocumento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dameListaTipoDocumentos">
+      <soap12:operation soapAction="http://tempuri.org/dameListaTipoDocumentos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService1">
+    <wsdl:port name="WebService1Soap" binding="tns:WebService1Soap">
+      <soap:address location="http://localhost:61439/WebService1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebService1Soap12" binding="tns:WebService1Soap12">
+      <soap12:address location="http://localhost:61439/WebService1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
