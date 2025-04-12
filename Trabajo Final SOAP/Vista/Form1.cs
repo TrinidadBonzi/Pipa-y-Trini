@@ -28,5 +28,14 @@ namespace Vista
 
             client.agregarTipoDocumento(aTipo);
         }
+
+        private void Mostrar_Click(object sender, EventArgs e)
+        {
+            ServiceReference1.WebService1SoapClient client = new ServiceReference1.WebService1SoapClient();
+
+            var listaDocumentos = client.dameListaTipoDocumentos();
+
+            dataGridView1.DataSource = listaDocumentos;
+        }
     }
 }
