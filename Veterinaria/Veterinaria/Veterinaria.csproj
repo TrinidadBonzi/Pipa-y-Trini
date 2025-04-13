@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Datos\Dtos\" />
     <Folder Include="Logica\" />
     <Folder Include="Repositorio\" />
   </ItemGroup>
