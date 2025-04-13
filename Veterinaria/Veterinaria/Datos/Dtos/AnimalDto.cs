@@ -10,6 +10,6 @@ namespace Veterinaria.Datos.Dtos
         public int edadAnimal { get; set; }
         public string sexoAnimal { get; set; }
         public Duenio? duenio { get; set; }
-        public ICollection<Atencion> Atenciones { get; set; } = new List<Atencion>();
+        
     }
 }

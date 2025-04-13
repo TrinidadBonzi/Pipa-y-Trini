@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\datos\\dtos\\dueniodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\datos\\dtos\\dueniodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\repositorio\\duenio\\dueniorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\repositorio\\duenio\\dueniorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\datos\\dtos\\atenciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\datos\\dtos\\atenciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\repositorio\\animal\\animalrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\repositorio\\animal\\animalrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\datos\\dtos\\animaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\datos\\dtos\\animaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\repositorio\\duenio\\idueniorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\repositorio\\duenio\\idueniorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\repositorio\\atencion\\iatencionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\repositorio\\atencion\\iatencionrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\repositorio\\animal\\ianimalrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\repositorio\\animal\\ianimalrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AtencionDto.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Datos\\Dtos\\AtencionDto.cs",
-              "RelativeDocumentMoniker": "Veterinaria\\Datos\\Dtos\\AtencionDto.cs",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Datos\\Dtos\\AtencionDto.cs",
-              "RelativeToolTip": "Veterinaria\\Datos\\Dtos\\AtencionDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T15:55:04.544Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DuenioDto.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Datos\\Dtos\\DuenioDto.cs",
-              "RelativeDocumentMoniker": "Veterinaria\\Datos\\Dtos\\DuenioDto.cs",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Datos\\Dtos\\DuenioDto.cs",
-              "RelativeToolTip": "Veterinaria\\Datos\\Dtos\\DuenioDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Title": "DuenioRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Repositorio\\Duenio\\DuenioRepositorio.cs",
+              "RelativeDocumentMoniker": "Veterinaria\\Repositorio\\Duenio\\DuenioRepositorio.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Repositorio\\Duenio\\DuenioRepositorio.cs",
+              "RelativeToolTip": "Veterinaria\\Repositorio\\Duenio\\DuenioRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T15:54:52.761Z",
+              "WhenOpened": "2025-04-13T19:12:44.202Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AnimalDto.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Datos\\Dtos\\AnimalDto.cs",
-              "RelativeDocumentMoniker": "Veterinaria\\Datos\\Dtos\\AnimalDto.cs",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Datos\\Dtos\\AnimalDto.cs",
-              "RelativeToolTip": "Veterinaria\\Datos\\Dtos\\AnimalDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Title": "IDuenioRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Repositorio\\Duenio\\IDuenioRepositorio.cs",
+              "RelativeDocumentMoniker": "Veterinaria\\Repositorio\\Duenio\\IDuenioRepositorio.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Repositorio\\Duenio\\IDuenioRepositorio.cs",
+              "RelativeToolTip": "Veterinaria\\Repositorio\\Duenio\\IDuenioRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T15:54:42.87Z",
+              "WhenOpened": "2025-04-13T19:12:24.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAtencionRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Repositorio\\Atencion\\IAtencionRepositorio.cs",
+              "RelativeDocumentMoniker": "Veterinaria\\Repositorio\\Atencion\\IAtencionRepositorio.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Repositorio\\Atencion\\IAtencionRepositorio.cs",
+              "RelativeToolTip": "Veterinaria\\Repositorio\\Atencion\\IAtencionRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T19:11:50.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AnimalRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Repositorio\\Animal\\AnimalRepositorio.cs",
+              "RelativeDocumentMoniker": "Veterinaria\\Repositorio\\Animal\\AnimalRepositorio.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Repositorio\\Animal\\AnimalRepositorio.cs",
+              "RelativeToolTip": "Veterinaria\\Repositorio\\Animal\\AnimalRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T19:08:59.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IAnimalRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Repositorio\\Animal\\IAnimalRepositorio.cs",
+              "RelativeDocumentMoniker": "Veterinaria\\Repositorio\\Animal\\IAnimalRepositorio.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Repositorio\\Animal\\IAnimalRepositorio.cs",
+              "RelativeToolTip": "Veterinaria\\Repositorio\\Animal\\IAnimalRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T19:08:56.904Z",
               "EditorCaption": ""
             }
           ]
