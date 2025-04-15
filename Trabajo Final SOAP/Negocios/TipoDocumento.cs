@@ -23,10 +23,9 @@ namespace Negocios
             return listita_modelo;
         }
 
-        public static void eliminarTipoDoc (int codigo)
+        public static void eliminarTipoDoc(int codigo)
         {
-
+            listita_modelo.RemoveAll(tipo => tipo.codigoDocumento == codigo);
         }
-
     }
 }

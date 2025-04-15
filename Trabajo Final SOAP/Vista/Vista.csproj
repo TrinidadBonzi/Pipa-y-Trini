@@ -79,6 +79,9 @@
     <None Include="Connected Services\ServiceReference1\Vista.ServiceReference1.dameListaTipoDocumentosResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\ServiceReference1\Vista.ServiceReference1.eliminarTipoDocResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServiceReference1\Vista.ServiceReference1.TipoDocumento.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -118,6 +121,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Negocios\Negocioo.csproj">
+      <Project>{25CC00E2-E8D9-45F8-AC5C-B9D78ED291B0}</Project>
+      <Name>Negocioo</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WebApplication1\WebApplication1.csproj">
       <Project>{0f9cdd8a-9a22-4e24-99ca-f2fd3df4baec}</Project>
       <Name>WebApplication1</Name>

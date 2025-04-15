@@ -90,6 +90,13 @@ namespace Vista.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/dameListaTipoDocumentos", ReplyAction="*")]
         System.Threading.Tasks.Task<Vista.ServiceReference1.dameListaTipoDocumentosResponse> dameListaTipoDocumentosAsync(Vista.ServiceReference1.dameListaTipoDocumentosRequest request);
+        
+        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento eliminarTipoDocResult del espacio de nombres http://tempuri.org/ no está marcado para aceptar valores nil.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/eliminarTipoDoc", ReplyAction="*")]
+        Vista.ServiceReference1.eliminarTipoDocResponse eliminarTipoDoc(Vista.ServiceReference1.eliminarTipoDocRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/eliminarTipoDoc", ReplyAction="*")]
+        System.Threading.Tasks.Task<Vista.ServiceReference1.eliminarTipoDocResponse> eliminarTipoDocAsync(Vista.ServiceReference1.eliminarTipoDocRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -221,6 +228,74 @@ namespace Vista.ServiceReference1 {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class eliminarTipoDocRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="eliminarTipoDoc", Namespace="http://tempuri.org/", Order=0)]
+        public Vista.ServiceReference1.eliminarTipoDocRequestBody Body;
+        
+        public eliminarTipoDocRequest() {
+        }
+        
+        public eliminarTipoDocRequest(Vista.ServiceReference1.eliminarTipoDocRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class eliminarTipoDocRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int codigo;
+        
+        public eliminarTipoDocRequestBody() {
+        }
+        
+        public eliminarTipoDocRequestBody(int codigo) {
+            this.codigo = codigo;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class eliminarTipoDocResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="eliminarTipoDocResponse", Namespace="http://tempuri.org/", Order=0)]
+        public Vista.ServiceReference1.eliminarTipoDocResponseBody Body;
+        
+        public eliminarTipoDocResponse() {
+        }
+        
+        public eliminarTipoDocResponse(Vista.ServiceReference1.eliminarTipoDocResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class eliminarTipoDocResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string eliminarTipoDocResult;
+        
+        public eliminarTipoDocResponseBody() {
+        }
+        
+        public eliminarTipoDocResponseBody(string eliminarTipoDocResult) {
+            this.eliminarTipoDocResult = eliminarTipoDocResult;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface WebService1SoapChannel : Vista.ServiceReference1.WebService1Soap, System.ServiceModel.IClientChannel {
     }
@@ -294,6 +369,31 @@ namespace Vista.ServiceReference1 {
             Vista.ServiceReference1.dameListaTipoDocumentosRequest inValue = new Vista.ServiceReference1.dameListaTipoDocumentosRequest();
             inValue.Body = new Vista.ServiceReference1.dameListaTipoDocumentosRequestBody();
             return ((Vista.ServiceReference1.WebService1Soap)(this)).dameListaTipoDocumentosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Vista.ServiceReference1.eliminarTipoDocResponse Vista.ServiceReference1.WebService1Soap.eliminarTipoDoc(Vista.ServiceReference1.eliminarTipoDocRequest request) {
+            return base.Channel.eliminarTipoDoc(request);
+        }
+        
+        public string eliminarTipoDoc(int codigo) {
+            Vista.ServiceReference1.eliminarTipoDocRequest inValue = new Vista.ServiceReference1.eliminarTipoDocRequest();
+            inValue.Body = new Vista.ServiceReference1.eliminarTipoDocRequestBody();
+            inValue.Body.codigo = codigo;
+            Vista.ServiceReference1.eliminarTipoDocResponse retVal = ((Vista.ServiceReference1.WebService1Soap)(this)).eliminarTipoDoc(inValue);
+            return retVal.Body.eliminarTipoDocResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Vista.ServiceReference1.eliminarTipoDocResponse> Vista.ServiceReference1.WebService1Soap.eliminarTipoDocAsync(Vista.ServiceReference1.eliminarTipoDocRequest request) {
+            return base.Channel.eliminarTipoDocAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Vista.ServiceReference1.eliminarTipoDocResponse> eliminarTipoDocAsync(int codigo) {
+            Vista.ServiceReference1.eliminarTipoDocRequest inValue = new Vista.ServiceReference1.eliminarTipoDocRequest();
+            inValue.Body = new Vista.ServiceReference1.eliminarTipoDocRequestBody();
+            inValue.Body.codigo = codigo;
+            return ((Vista.ServiceReference1.WebService1Soap)(this)).eliminarTipoDocAsync(inValue);
         }
     }
 }

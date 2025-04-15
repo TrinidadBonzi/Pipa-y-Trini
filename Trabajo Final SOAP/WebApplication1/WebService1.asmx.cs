@@ -29,5 +29,11 @@ namespace WebApplication1
         {
             return TipoDocumento.ObtenerListaTipoDocumentos();
         }
+        [WebMethod]
+        public string eliminarTipoDoc(int codigo)
+        {
+            TipoDocumento.eliminarTipoDoc(codigo);
+            return "OK";
+        }
     }
 }
