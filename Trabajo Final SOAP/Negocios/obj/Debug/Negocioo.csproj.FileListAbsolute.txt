@@ -1,6 +1,0 @@
-C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Negocios\bin\Debug\Negocios.dll
-C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Negocios\bin\Debug\Negocios.pdb
-C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Negocios\obj\Debug\Negocioo.csproj.AssemblyReference.cache
-C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Negocios\obj\Debug\Negocioo.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Negocios\obj\Debug\Negocios.dll
-C:\Users\Usuario\OneDrive\Documentos\GitHub\Pipa-y-Trini\Trabajo Final SOAP\Negocios\obj\Debug\Negocios.pdb
