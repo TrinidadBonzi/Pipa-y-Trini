@@ -1,4 +1,5 @@
-﻿namespace Veterinaria.Repositorio.Animal
+﻿
+namespace Veterinaria.Repositorio.Animal
 {
     public interface IAnimalRepositorio
     {

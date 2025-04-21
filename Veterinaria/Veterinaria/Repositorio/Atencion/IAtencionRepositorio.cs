@@ -2,6 +2,6 @@
 {
     public interface IAtencionRepositorio
     {
-        
+        Datos.Entidades.Atencion ObtenerAtencion(int idAtencion);
     }
 }

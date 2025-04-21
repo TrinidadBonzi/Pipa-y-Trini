@@ -14,5 +14,5 @@ namespace Veterinaria.Repositorio.Animal
         {
             return _context.Animales.FirstOrDefault(x => x.idAnimal == id);
         }
-    }    
+    }
 }
