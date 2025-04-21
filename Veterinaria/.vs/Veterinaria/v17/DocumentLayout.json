@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\repositorio\\duenio\\dueniorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\repositorio\\duenio\\dueniorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\logica\\duenio\\dueniologica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\logica\\duenio\\dueniologica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\repositorio\\duenio\\idueniorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\repositorio\\duenio\\idueniorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\repositorio\\animal\\ianimalrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\repositorio\\animal\\ianimalrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\repositorio\\animal\\animalrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\repositorio\\animal\\animalrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\datos\\dtos\\dueniodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\datos\\dtos\\dueniodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DuenioRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Repositorio\\Duenio\\DuenioRepositorio.cs",
-              "RelativeDocumentMoniker": "Veterinaria\\Repositorio\\Duenio\\DuenioRepositorio.cs",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Repositorio\\Duenio\\DuenioRepositorio.cs",
-              "RelativeToolTip": "Veterinaria\\Repositorio\\Duenio\\DuenioRepositorio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T12:52:43.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IDuenioRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Repositorio\\Duenio\\IDuenioRepositorio.cs",
-              "RelativeDocumentMoniker": "Veterinaria\\Repositorio\\Duenio\\IDuenioRepositorio.cs",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Repositorio\\Duenio\\IDuenioRepositorio.cs",
-              "RelativeToolTip": "Veterinaria\\Repositorio\\Duenio\\IDuenioRepositorio.cs",
+              "Title": "DuenioDto.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Datos\\Dtos\\DuenioDto.cs",
+              "RelativeDocumentMoniker": "Veterinaria\\Datos\\Dtos\\DuenioDto.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Datos\\Dtos\\DuenioDto.cs",
+              "RelativeToolTip": "Veterinaria\\Datos\\Dtos\\DuenioDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T12:52:40.003Z",
+              "WhenOpened": "2025-04-21T13:13:54.379Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AnimalRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Repositorio\\Animal\\AnimalRepositorio.cs",
-              "RelativeDocumentMoniker": "Veterinaria\\Repositorio\\Animal\\AnimalRepositorio.cs",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Repositorio\\Animal\\AnimalRepositorio.cs",
-              "RelativeToolTip": "Veterinaria\\Repositorio\\Animal\\AnimalRepositorio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "DuenioLogica.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Logica\\Duenio\\DuenioLogica.cs",
+              "RelativeDocumentMoniker": "Veterinaria\\Logica\\Duenio\\DuenioLogica.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Logica\\Duenio\\DuenioLogica.cs",
+              "RelativeToolTip": "Veterinaria\\Logica\\Duenio\\DuenioLogica.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T12:44:58.923Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IAnimalRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Repositorio\\Animal\\IAnimalRepositorio.cs",
-              "RelativeDocumentMoniker": "Veterinaria\\Repositorio\\Animal\\IAnimalRepositorio.cs",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Repositorio\\Animal\\IAnimalRepositorio.cs",
-              "RelativeToolTip": "Veterinaria\\Repositorio\\Animal\\IAnimalRepositorio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T19:08:56.904Z",
+              "WhenOpened": "2025-04-21T13:12:01.087Z",
               "EditorCaption": ""
             }
           ]
