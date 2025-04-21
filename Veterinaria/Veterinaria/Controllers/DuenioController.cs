@@ -26,5 +26,14 @@ namespace Veterinaria.Controllers
 
             return Ok(duenioDto);
         }
+        [HttpDelete("{id}")]
+        public IActionResult Eliminar(int id)
+        {
+            bool eliminado = _duenioLogica.EliminarDuenio(id);
+            if (!eliminado)
+                return NotFound();
+
+            return NoContent();
+        }
     }
 }

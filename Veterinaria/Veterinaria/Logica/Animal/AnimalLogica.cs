@@ -30,5 +30,14 @@ namespace Veterinaria.Logica.Animal
                 sexoAnimal = animal.sexoAnimal,
             };
         }
+        public bool EliminarAnimal(int id)
+        {
+            var animal = _animalRepositorio.ObtenerAnimal(id);
+            if (animal == null) return false;
+
+            _animalRepositorio.Eliminar(animal);
+            return true;
+        }
+
     }
 }

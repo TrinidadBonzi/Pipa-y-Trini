@@ -14,5 +14,10 @@ namespace Veterinaria.Repositorio.Animal
         {
             return _context.Animales.FirstOrDefault(x => x.idAnimal == id);
         }
+        public void Eliminar(Veterinaria.Datos.Entidades.Animal animal)
+        {
+            _context.Animales.Remove(animal);
+            _context.SaveChanges();
+        }
     }
 }

@@ -5,5 +5,6 @@ namespace Veterinaria.Logica.Atencion
     public interface IAtencionLogica
     {
         AtencionDto ObtenerAtencion(int id);
+        bool EliminarAtencion(int id);
     }
 }

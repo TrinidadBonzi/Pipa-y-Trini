@@ -29,5 +29,13 @@ namespace Veterinaria.Logica.Duenio
                 apellidoDuenio = duenio.apellidoDuenio,
             };
         }
+        public bool EliminarDuenio(int id)
+        {
+            var duenio = _duenioRepositorio.ObtenerDuenio(id);
+            if (duenio == null) return false;
+
+            _duenioRepositorio.Eliminar(duenio);
+            return true;
+        }
     }
 }

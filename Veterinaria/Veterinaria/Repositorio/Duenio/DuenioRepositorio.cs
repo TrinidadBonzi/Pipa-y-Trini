@@ -14,5 +14,10 @@ namespace Veterinaria.Repositorio.Duenio
         {
             return _context.Duenios.FirstOrDefault(x => x.idDuenio == id);
         }
+        public void Eliminar(Veterinaria.Datos.Entidades.Duenio duenio)
+        {
+            _context.Duenios.Remove(duenio);
+            _context.SaveChanges();
+        }
     }
 }

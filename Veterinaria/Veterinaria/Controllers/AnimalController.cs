@@ -26,5 +26,15 @@ namespace Veterinaria.Controllers
 
             return Ok(animalDto);
         }
+        [HttpDelete("{id}")]
+        public IActionResult Eliminar(int id)
+        {
+            bool eliminado = _animalLogica.EliminarAnimal(id);
+            if (!eliminado)
+                return NotFound();
+
+            return NoContent();
+        }
+
     }
 }

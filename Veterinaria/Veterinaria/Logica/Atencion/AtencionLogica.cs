@@ -31,5 +31,13 @@ namespace Veterinaria.Logica.Atencion
                 fechaRegistroAtencion = atencion.fechaRegistroAtencion
             };
         }
+        public bool EliminarAtencion(int id)
+        {
+            var atencion = _atencionRepositorio.ObtenerAtencion(id);
+            if (atencion == null) return false;
+
+            _atencionRepositorio.Eliminar(atencion);
+            return true;
+        }
     }
 }
