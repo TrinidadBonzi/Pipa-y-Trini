@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\controllers\\dueniocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\controllers\\dueniocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\controllers\\atencioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\controllers\\atencioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\controllers\\animalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\controllers\\animalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Program.cs",
-              "RelativeDocumentMoniker": "Veterinaria\\Program.cs",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Program.cs",
-              "RelativeToolTip": "Veterinaria\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Title": "DuenioController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Controllers\\DuenioController.cs",
+              "RelativeDocumentMoniker": "Veterinaria\\Controllers\\DuenioController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Controllers\\DuenioController.cs",
+              "RelativeToolTip": "Veterinaria\\Controllers\\DuenioController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T13:17:18.08Z",
+              "WhenOpened": "2025-04-21T13:33:26.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AtencionController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Controllers\\AtencionController.cs",
+              "RelativeDocumentMoniker": "Veterinaria\\Controllers\\AtencionController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Controllers\\AtencionController.cs",
+              "RelativeToolTip": "Veterinaria\\Controllers\\AtencionController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T13:33:14.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AnimalController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Controllers\\AnimalController.cs",
+              "RelativeDocumentMoniker": "Veterinaria\\Controllers\\AnimalController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Controllers\\AnimalController.cs",
+              "RelativeToolTip": "Veterinaria\\Controllers\\AnimalController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T13:23:19.153Z",
               "EditorCaption": ""
             }
           ]
