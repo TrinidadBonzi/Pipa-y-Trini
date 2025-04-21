@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\logica\\duenio\\dueniologica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\logica\\duenio\\dueniologica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\datos\\dtos\\dueniodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\datos\\dtos\\dueniodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|c:\\users\\usuario\\onedrive\\documentos\\github\\pipa-y-trini\\veterinaria\\veterinaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C4F8DBA-F3B3-4EB9-916E-0635550ECB0A}|Veterinaria\\Veterinaria.csproj|solutionrelative:veterinaria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DuenioDto.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Datos\\Dtos\\DuenioDto.cs",
-              "RelativeDocumentMoniker": "Veterinaria\\Datos\\Dtos\\DuenioDto.cs",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Datos\\Dtos\\DuenioDto.cs",
-              "RelativeToolTip": "Veterinaria\\Datos\\Dtos\\DuenioDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T13:13:54.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DuenioLogica.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Logica\\Duenio\\DuenioLogica.cs",
-              "RelativeDocumentMoniker": "Veterinaria\\Logica\\Duenio\\DuenioLogica.cs",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Logica\\Duenio\\DuenioLogica.cs",
-              "RelativeToolTip": "Veterinaria\\Logica\\Duenio\\DuenioLogica.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA1wCEAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Program.cs",
+              "RelativeDocumentMoniker": "Veterinaria\\Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Documentos\\GitHub\\Pipa-y-Trini\\Veterinaria\\Veterinaria\\Program.cs",
+              "RelativeToolTip": "Veterinaria\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T13:12:01.087Z",
+              "WhenOpened": "2025-04-21T13:17:18.08Z",
               "EditorCaption": ""
             }
           ]
