@@ -9,7 +9,7 @@ namespace Veterinaria.Datos.Dtos
         public string razaAnimal { get; set; }
         public int edadAnimal { get; set; }
         public string sexoAnimal { get; set; }
-        public Duenio? duenio { get; set; }
+        public int idDuenio { get; set; }
         
     }
 }

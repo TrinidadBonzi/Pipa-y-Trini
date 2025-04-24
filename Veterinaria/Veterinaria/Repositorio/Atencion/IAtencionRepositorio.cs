@@ -6,5 +6,6 @@
         void Eliminar(Datos.Entidades.Atencion atencion);
         void Agregar(Datos.Entidades.Atencion atencion);
         Datos.Entidades.Animal ObtenerAnimal(int idMascota);
+        void Actualizar(Datos.Entidades.Atencion atencion);
     }
 }

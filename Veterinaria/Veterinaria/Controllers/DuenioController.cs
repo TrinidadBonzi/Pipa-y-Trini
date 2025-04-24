@@ -49,5 +49,24 @@ namespace Veterinaria.Controllers
             }
             return CreatedAtAction(nameof(ObtenerPorId), new { id = nuevoDuenio.idDuenio }, nuevoDuenio);
         }
+        [HttpPut("{id}")]
+        public IActionResult ActualizarDuenio(int id, [FromBody] DuenioDto duenioDto)
+        {
+            if (duenioDto == null)
+            {
+                return BadRequest("El dueño no puede ser nulo.");
+            }
+            var duenioExistente = _duenioLogica.ObtenerDuenio(id);
+            if (duenioExistente == null)
+            {
+                return NotFound();
+            }
+            bool actualizado = _duenioLogica.ActualizarDuenio(id, duenioDto);
+            if (!actualizado)
+            {
+                return BadRequest("Error al actualizar el dueño.");
+            }
+            return NoContent();
+        }
     }
 }

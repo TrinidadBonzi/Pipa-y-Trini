@@ -53,6 +53,24 @@ namespace Veterinaria.Logica.Duenio
             _duenioRepositorio.Agregar(duenioEntidad);
             return true;
         }
+        public bool ActualizarDuenio(int id, DuenioDto duenioDto)
+        {
+            if (duenioDto == null)
+            {
+                return false;
+            }
+            var duenioEntidad = _duenioRepositorio.ObtenerDuenio(id);
+            if (duenioEntidad == null)
+            {
+                return false;
+            }
+            duenioEntidad.idDuenio = duenioDto.idDuenio;
+            duenioEntidad.dniDuenio = duenioDto.dniDuenio;
+            duenioEntidad.nombreDuenio = duenioDto.nombreDuenio;
+            duenioEntidad.apellidoDuenio = duenioDto.apellidoDuenio;
 
+            _duenioRepositorio.Actualizar(duenioEntidad);
+            return true;
+        }
     }
 }

@@ -49,5 +49,24 @@ namespace Veterinaria.Controllers
             }
             return CreatedAtAction(nameof(ObtenerPorId), new { id = nuevaAtencion.idAtencion }, nuevaAtencion);
         }
+        [HttpPut("{id}")]
+        public IActionResult ActualizarAtencion(int id, [FromBody] AtencionDto atencionDto)
+        {
+            if (atencionDto == null)
+            {
+                return BadRequest("La atención no puede ser nula.");
+            }
+            var atencionExistente = _atencionLogica.ObtenerAtencion(id);
+            if (atencionExistente == null)
+            {
+                return NotFound();
+            }
+            bool actualizado = _atencionLogica.ActualizarAtencion(id, atencionDto);
+            if (!actualizado)
+            {
+                return BadRequest("Error al actualizar la atención.");
+            }
+            return NoContent();
+        }
     }
 }
