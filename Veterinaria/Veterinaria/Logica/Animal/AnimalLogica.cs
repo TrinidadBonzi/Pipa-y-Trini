@@ -38,6 +38,33 @@ namespace Veterinaria.Logica.Animal
             _animalRepositorio.Eliminar(animal);
             return true;
         }
+        public bool AgregarAnimal(AnimalDto nuevoAnimal)
+        {
+            if (nuevoAnimal == null)
+            {
+                return false;
+            }
+
+            var animalEntidad = new Datos.Entidades.Animal
+            {
+                idAnimal = nuevoAnimal.idAnimal,
+                nombreAnimal = nuevoAnimal.nombreAnimal,
+                razaAnimal = nuevoAnimal.razaAnimal,
+                edadAnimal = nuevoAnimal.edadAnimal,
+                sexoAnimal = nuevoAnimal.sexoAnimal,
+                duenio = nuevoAnimal.duenio != null ? new Datos.Entidades.Duenio
+                {
+                    idDuenio = nuevoAnimal.duenio.idDuenio,
+                    dniDuenio = nuevoAnimal.duenio.dniDuenio,
+                    nombreDuenio = nuevoAnimal.duenio.nombreDuenio,
+                    apellidoDuenio = nuevoAnimal.duenio.apellidoDuenio
+                } : null
+            };
+
+            _animalRepositorio.Agregar(animalEntidad);
+            return true;
+        }
+
 
     }
 }

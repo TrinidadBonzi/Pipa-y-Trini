@@ -19,5 +19,11 @@ namespace Veterinaria.Repositorio.Duenio
             _context.Duenios.Remove(duenio);
             _context.SaveChanges();
         }
+        public void Agregar(Veterinaria.Datos.Entidades.Duenio duenio)
+        {
+            _context.Duenios.Add(duenio);
+            _context.SaveChanges();
+        }
+       
     }
 }

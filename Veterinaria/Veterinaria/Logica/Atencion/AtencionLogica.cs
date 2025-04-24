@@ -39,5 +39,32 @@ namespace Veterinaria.Logica.Atencion
             _atencionRepositorio.Eliminar(atencion);
             return true;
         }
+        public bool AgregarAtencion(AtencionDto nuevaAtencion)
+        {
+            if (nuevaAtencion == null)
+            {
+                return false;
+            }
+
+            var animal = _atencionRepositorio.ObtenerAnimal(nuevaAtencion.idMascota);
+            if (animal == null)
+            {
+                return false; 
+            }
+
+            var atencionEntidad = new Datos.Entidades.Atencion
+            {
+                idAtencion = nuevaAtencion.idAtencion,
+                fechaAtencion = nuevaAtencion.fechaAtencion,
+                motivoAtencion = nuevaAtencion.motivoAtencion,
+                tratamientoAtencion = nuevaAtencion.tratamientoAtencion,
+                medicamentoAtencion = nuevaAtencion.medicamentoAtencion,
+                fechaRegistroAtencion = nuevaAtencion.fechaRegistroAtencion,
+                Animal = animal 
+            };
+
+            _atencionRepositorio.Agregar(atencionEntidad);
+            return true;
+        }
     }
 }

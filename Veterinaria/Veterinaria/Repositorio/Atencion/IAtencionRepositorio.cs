@@ -4,5 +4,7 @@
     {
         Datos.Entidades.Atencion ObtenerAtencion(int idAtencion);
         void Eliminar(Datos.Entidades.Atencion atencion);
+        void Agregar(Datos.Entidades.Atencion atencion);
+        Datos.Entidades.Animal ObtenerAnimal(int idMascota);
     }
 }

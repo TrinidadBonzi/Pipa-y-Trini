@@ -6,5 +6,6 @@ namespace Veterinaria.Logica.Duenio
     {
         DuenioDto ObtenerDuenio(int id);
         bool EliminarDuenio(int id);
+        bool AgregarDuenio(DuenioDto nuevoDuenio);
     }
 }

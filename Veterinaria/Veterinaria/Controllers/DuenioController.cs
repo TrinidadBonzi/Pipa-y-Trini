@@ -35,5 +35,19 @@ namespace Veterinaria.Controllers
 
             return NoContent();
         }
+        [HttpPost]
+        public IActionResult AgregarDuenio([FromBody] DuenioDto nuevoDuenio)
+        {
+            if (nuevoDuenio == null)
+            {
+                return BadRequest("El dueño no puede ser nulo.");
+            }
+            bool agregado = _duenioLogica.AgregarDuenio(nuevoDuenio);
+            if (!agregado)
+            {
+                return BadRequest("Error al agregar el dueño.");
+            }
+            return CreatedAtAction(nameof(ObtenerPorId), new { id = nuevoDuenio.idDuenio }, nuevoDuenio);
+        }
     }
 }

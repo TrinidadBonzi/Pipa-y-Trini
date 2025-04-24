@@ -6,5 +6,6 @@ namespace Veterinaria.Logica.Atencion
     {
         AtencionDto ObtenerAtencion(int id);
         bool EliminarAtencion(int id);
+        bool AgregarAtencion(AtencionDto nuevaAtencion);
     }
 }
