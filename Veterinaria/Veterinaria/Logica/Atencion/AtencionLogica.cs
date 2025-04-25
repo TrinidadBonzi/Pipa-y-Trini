@@ -46,10 +46,14 @@ namespace Veterinaria.Logica.Atencion
                 return false;
             }
 
-            var animal = _atencionRepositorio.ObtenerAnimal(nuevaAtencion.idMascota);
-            if (animal == null)
+            if (nuevaAtencion.fechaAtencion > DateTime.Now)
             {
-                return false; 
+                throw new ArgumentException("La fecha de atención no puede ser futura.");
+            }
+
+            if (nuevaAtencion.fechaRegistroAtencion < nuevaAtencion.fechaAtencion)
+            {
+                throw new ArgumentException("La fecha de registro debe ser igual o posterior a la fecha de atención.");
             }
 
             var atencionEntidad = new Datos.Entidades.Atencion
@@ -60,9 +64,8 @@ namespace Veterinaria.Logica.Atencion
                 tratamientoAtencion = nuevaAtencion.tratamientoAtencion,
                 medicamentoAtencion = nuevaAtencion.medicamentoAtencion,
                 fechaRegistroAtencion = nuevaAtencion.fechaRegistroAtencion,
-                Animal = animal 
+                idAnimal = nuevaAtencion.idMascota
             };
-
             _atencionRepositorio.Agregar(atencionEntidad);
             return true;
         }
