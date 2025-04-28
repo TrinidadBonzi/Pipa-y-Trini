@@ -6,6 +6,8 @@ namespace Veterinaria.Repositorio.Animal
     {
         Datos.Entidades.Animal ObtenerAnimal(int idAnimal);
         void Eliminar(Datos.Entidades.Animal animal);
+        void Agregar(Datos.Entidades.Animal animal);
+        void Actualizar(Datos.Entidades.Animal animal);
 
     }
 }

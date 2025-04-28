@@ -6,6 +6,8 @@ namespace Veterinaria.Logica.Animal
     {
         AnimalDto ObtenerAnimal(int id);
         bool EliminarAnimal(int id);
+        bool AgregarAnimal(AnimalDto nuevoAnimal);
+        bool ActualizarAnimal(int id, AnimalDto animalDto);
 
     }
 }

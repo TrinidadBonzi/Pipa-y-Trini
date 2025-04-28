@@ -35,6 +35,40 @@ namespace Veterinaria.Controllers
 
             return NoContent();
         }
+        [HttpPost]
+        public IActionResult AgregarAnimal([FromBody] AnimalDto nuevoAnimal)
+        {
+            if (nuevoAnimal == null)
+            {
+                return BadRequest("El animal no puede ser nulo.");
+            }
+            bool agregado = _animalLogica.AgregarAnimal(nuevoAnimal);
+            if (!agregado)
+            {
+                return BadRequest("Error al agregar el animal.");
+            }
+            return CreatedAtAction(nameof(ObtenerPorId), new { id = nuevoAnimal.idAnimal }, nuevoAnimal);
+        }
+        [HttpPut("{id}")]
+        public IActionResult ActualizarAnimal(int id, [FromBody] AnimalDto animalDto)
+        {
+            if (animalDto == null)
+            {
+                return BadRequest("El animal no puede ser nulo.");
+            }
+            var animalExistente = _animalLogica.ObtenerAnimal(id);
+            if (animalExistente == null)
+            {
+                return NotFound();
+            }
+            animalDto.idAnimal = id;
+            bool actualizado = _animalLogica.ActualizarAnimal(id, animalDto);
+            if (!actualizado)
+            {
+                return BadRequest("Error al actualizar el animal.");
+            }
+            return NoContent();
+        }
 
     }
 }

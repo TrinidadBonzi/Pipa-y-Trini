@@ -31,9 +31,6 @@ namespace Veterinaria.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idAnimal"));
 
-                    b.Property<int?>("DuenioidDuenio")
-                        .HasColumnType("int");
-
                     b.Property<int>("edadAnimal")
                         .HasColumnType("int");
 
@@ -54,8 +51,6 @@ namespace Veterinaria.Migrations
 
                     b.HasKey("idAnimal")
                         .HasName("PK_ID_ANIMAL");
-
-                    b.HasIndex("DuenioidDuenio");
 
                     b.HasIndex("idDuenio");
 
@@ -132,10 +127,6 @@ namespace Veterinaria.Migrations
 
             modelBuilder.Entity("Veterinaria.Datos.Entidades.Animal", b =>
                 {
-                    b.HasOne("Veterinaria.Datos.Entidades.Duenio", null)
-                        .WithMany("Animales")
-                        .HasForeignKey("DuenioidDuenio");
-
                     b.HasOne("Veterinaria.Datos.Entidades.Duenio", "duenio")
                         .WithMany()
                         .HasForeignKey("idDuenio");
@@ -161,11 +152,6 @@ namespace Veterinaria.Migrations
             modelBuilder.Entity("Veterinaria.Datos.Entidades.Animal", b =>
                 {
                     b.Navigation("Atenciones");
-                });
-
-            modelBuilder.Entity("Veterinaria.Datos.Entidades.Duenio", b =>
-                {
-                    b.Navigation("Animales");
                 });
 #pragma warning restore 612, 618
         }

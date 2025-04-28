@@ -20,5 +20,19 @@ namespace Veterinaria.Repositorio.Atencion
             _context.Atenciones.Remove(atencion);
             _context.SaveChanges();
         }
+        public void Agregar(Veterinaria.Datos.Entidades.Atencion atencion)
+        {
+            _context.Atenciones.Add(atencion);
+            _context.SaveChanges();
+        }
+        public Datos.Entidades.Animal ObtenerAnimal(int idMascota)
+        {
+            return _context.Animales.FirstOrDefault(x => x.idAnimal == idMascota);
+        }
+        public void Actualizar(Datos.Entidades.Atencion atencion)
+        {
+            _context.Atenciones.Update(atencion);
+            _context.SaveChanges();
+        }
     }
 }

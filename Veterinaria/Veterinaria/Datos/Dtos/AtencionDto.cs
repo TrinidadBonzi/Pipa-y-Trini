@@ -10,7 +10,6 @@ namespace Veterinaria.Datos.Dtos
         public string tratamientoAtencion { get; set; }
         public string medicamentoAtencion { get; set; }
         public DateTime fechaRegistroAtencion { get; set; }
-
-       
+        public int idMascota { get; set; }
     }
 }

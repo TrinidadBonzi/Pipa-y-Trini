@@ -19,5 +19,15 @@ namespace Veterinaria.Repositorio.Animal
             _context.Animales.Remove(animal);
             _context.SaveChanges();
         }
+        public void Agregar(Veterinaria.Datos.Entidades.Animal animal)
+        {
+            _context.Animales.Add(animal);
+            _context.SaveChanges();
+        }
+        public void Actualizar(Veterinaria.Datos.Entidades.Animal animal)
+        {
+            _context.Animales.Update(animal);
+            _context.SaveChanges();
+        }
     }
 }
