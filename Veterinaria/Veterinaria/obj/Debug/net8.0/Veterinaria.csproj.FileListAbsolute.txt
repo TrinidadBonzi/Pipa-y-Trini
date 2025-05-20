@@ -344,3 +344,7 @@ C:\Users\LENOVO\OneDrive\Documentos\Universidad\Pipa-y-Trini\Veterinaria\Veterin
 C:\Users\LENOVO\OneDrive\Documentos\Universidad\Pipa-y-Trini\Veterinaria\Veterinaria\obj\Debug\net8.0\Veterinaria.pdb
 C:\Users\LENOVO\OneDrive\Documentos\Universidad\Pipa-y-Trini\Veterinaria\Veterinaria\obj\Debug\net8.0\Veterinaria.genruntimeconfig.cache
 C:\Users\LENOVO\OneDrive\Documentos\Universidad\Pipa-y-Trini\Veterinaria\Veterinaria\obj\Debug\net8.0\ref\Veterinaria.dll
+C:\Users\LENOVO\OneDrive\Documentos\Universidad\Pipa-y-Trini\Veterinaria\Veterinaria\bin\Debug\net8.0\System.Net.Http.Json.dll
+C:\Users\LENOVO\OneDrive\Documentos\Universidad\Pipa-y-Trini\Veterinaria\Veterinaria\bin\Debug\net8.0\System.Net.Http.Formatting.dll
+C:\Users\LENOVO\OneDrive\Documentos\Universidad\Pipa-y-Trini\Veterinaria\Veterinaria\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\LENOVO\OneDrive\Documentos\Universidad\Pipa-y-Trini\Veterinaria\Veterinaria\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

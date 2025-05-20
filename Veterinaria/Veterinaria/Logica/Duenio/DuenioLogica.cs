@@ -23,7 +23,6 @@ namespace Veterinaria.Logica.Duenio
 
             return new DuenioDto
             {
-                idDuenio = duenio.idDuenio,
                 dniDuenio = duenio.dniDuenio,
                 nombreDuenio = duenio.nombreDuenio,
                 apellidoDuenio = duenio.apellidoDuenio,

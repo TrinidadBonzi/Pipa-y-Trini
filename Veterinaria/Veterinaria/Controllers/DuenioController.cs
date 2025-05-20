@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 using Veterinaria.Datos.Dtos;
 using Veterinaria.Logica.Duenio;
 
 namespace Veterinaria.Controllers
 {
-    [Route("duenios")]
+    [Route("api/duenios")]
     [ApiController]
     public class DuenioController : ControllerBase
     {
@@ -36,7 +37,7 @@ namespace Veterinaria.Controllers
             return NoContent();
         }
         [HttpPost]
-        public IActionResult AgregarDuenio([FromBody] DuenioDto nuevoDuenio)
+        public async Task<IActionResult> AgregarDuenio([FromBody] DuenioDto nuevoDuenio)
         {
             if (nuevoDuenio == null)
             {

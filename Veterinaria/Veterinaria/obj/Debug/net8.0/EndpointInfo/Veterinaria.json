@@ -235,7 +235,7 @@
         }
       }
     },
-    "/duenios/{id}": {
+    "/api/duenios/{id}": {
       "get": {
         "tags": [
           "Duenio"
@@ -319,7 +319,7 @@
         }
       }
     },
-    "/duenios": {
+    "/api/duenios": {
       "post": {
         "tags": [
           "Duenio"
@@ -422,7 +422,8 @@
         "properties": {
           "idDuenio": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
           "dniDuenio": {
             "type": "string",
