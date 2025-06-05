@@ -7,7 +7,7 @@ nav {
   max-width: 910px;
   mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
   width: 100%;
-  padding: 25px 50px; /* agregá un padding lateral si querés controlarlo */
+  padding: 25px 50px; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +16,7 @@ nav {
 
 
 nav .logo {
-  position: absolute; /* Lo saco del flujo flex para que quede fijo a la izquierda */
+  position: absolute; 
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -139,7 +139,7 @@ form .nombreanimal{
   transition: .5s;
 }
 
-.nombreanimal span:::before{
+.nombreanimal span::before{
   content: '';
   position: absolute;
   top: 40px;
@@ -186,7 +186,7 @@ form .dueñoanimal{
   transition: .5s;
 }
 
-.dueñoanimal span:::before{
+.dueñoanimal span::before{
   content: '';
   position: absolute;
   top: 40px;
