@@ -1,0 +1,14 @@
+[
+  {
+    "clave": "12345",
+    "id": 1,
+    "nombre": "Juan",
+    "direccion": "por ah\u00ED "
+  },
+  {
+    "clave": "666666",
+    "id": 2,
+    "nombre": "Pedro",
+    "direccion": "mas all\u00E1 "
+  }
+]
