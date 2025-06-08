@@ -224,3 +224,67 @@ input[type="submit"]:hover{
   transition: .5s;
 }
   
+/*Tabla Consulta Animal*/
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh; /* centra verticalmente */
+}
+table, th, td {
+  border: 1px solid black; /* Borde para tabla, encabezados y celdas */
+}
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+thead {
+  background: palevioletred;
+}
+th {
+  border: 1px solid #000;
+  padding: 20px 15px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+td {
+padding: 15px;
+border-bottom: solid #000000;
+}
+tbody tr{
+  cursor: pointer;
+}
+tbody tr:hover{
+  background: rgb(230, 163, 185);
+}
+.btneliminanimal {
+  padding: 6px 12px;
+  background-color: #e74c3c;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.btneliminanimal:hover {
+  background-color: #c0392b;
+}
+
+/* boton volver al listado*/
+.btnvolver {
+  display: block;              /* Para que se pueda centrar con margin auto */
+  width: fit-content;          /* Se ajusta al contenido */
+  margin: 20px auto;           /* Centra horizontalmente y agrega espacio arriba/abajo */
+  padding: 6px 12px;           
+  background-color: #f06292;   
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btnvolver:hover {
+  background-color: #e24687;
+}
