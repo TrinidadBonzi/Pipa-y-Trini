@@ -1,39 +1,36 @@
 html {
-  height:100%;
+  height: 100%;
   background-image: linear-gradient(to top, #919191 0%, #000000 100%);
 }
 
 nav {
   max-width: 910px;
-  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
   width: 100%;
-  padding: 25px 50px; 
+  padding: 25px 50px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between; /* Espacia entre logo y ul */
+  margin: 0 auto; /* Centra el nav dentro del body */
   position: relative;
-} 
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+}
 
-
+/* Asegura que el logo se quede a la izquierda */
 nav .logo {
-  position: absolute; 
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  flex: 0 0 auto;
-  margin-right: 0;
-  padding-right: 0;
-  float: left;
+  flex: 0 0 0;
 }
 
 nav .logo img {
-  height: 120px; 
+  height: 100px;
 }
 
-nav ul {                   
-  text-align: center;
+/* Centra la lista horizontalmente y asegura espacio suficiente */
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   padding: 0 20px;
-  margin-left: 300px;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
 }
@@ -42,10 +39,11 @@ nav ul li {
   display: inline-block;
 }
 
+
 nav ul li a {
   padding: 18px;
   font-family: "Open Sans";
-  text-transform:uppercase;
+  text-transform: uppercase;
   color: rgb(255, 255, 255);
   font-size: 18px;
   text-decoration: none;
@@ -59,66 +57,71 @@ nav ul li a:hover {
 }
 
 #banner {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('PerritoHusky.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('PerritoHusky.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
+
 #banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.397);
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.397);
+  z-index: 1;
 }
-#texto{
- position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
+
+#texto {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 /*Sección Registrar Animal*/
-.formulario{
-  position:absolute;
+.formulario {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
-  height: 340px;
   background: rgb(255, 255, 255);
   border-radius: 10px;
+  padding-bottom: 20px; /* 👈 opcional para que no quede apretado abajo */
 }
 
-.formulario h1{
+
+.formulario h1 {
   text-align: center;
   padding: 0 0 20px;
   border-bottom: 1px solid silver;
 }
 
-.formulario form{
+.formulario form {
   padding: 0 40px;
   box-sizing: border-box;
-  
 }
 
-form .nombreanimal{
+form .nombreanimal,
+form .dueñoanimal {
   position: relative;
   border-bottom: 2px solid rgb(0, 0, 0);
-  margin: 30px 0; 
+  margin: 30px 0;
 }
-.nombreanimal input{
+
+.nombreanimal input,
+.dueñoanimal input {
   width: 100%;
   padding: 0 5px;
   height: 40px;
@@ -128,7 +131,8 @@ form .nombreanimal{
   outline: none;
 }
 
-.nombreanimal label{
+.nombreanimal label,
+.dueñoanimal label {
   position: absolute;
   top: 50%;
   left: 5px;
@@ -139,7 +143,8 @@ form .nombreanimal{
   transition: .5s;
 }
 
-.nombreanimal span::before{
+.nombreanimal span::before,
+.dueñoanimal span::before {
   content: '';
   position: absolute;
   top: 40px;
@@ -149,65 +154,19 @@ form .nombreanimal{
   background: rgb(255, 0, 64);
   transition: .5s;
 }
+
 .nombreanimal input:focus ~ label,
-.nombreanimal input:focus ~ label{
+.dueñoanimal input:focus ~ label {
   top: -5px;
   color: rgb(255, 0, 64);
 }
 
-.nombreanimal input:focus ~ sapn::before,
-.nombreanimal input:focus ~ sapn::before{
+.nombreanimal input:focus ~ span::before,
+.dueñoanimal input:focus ~ span::before {
   width: 100%;
 }
 
-form .dueñoanimal{
-  position: relative;
-  border-bottom: 2px solid rgb(0, 0, 0);
-  margin: 30px 0; 
-}
-.dueñoanimal input{
-  width: 100%;
-  padding: 0 5px;
-  height: 40px;
-  font-size: 16px;
-  border: none;
-  background: none;
-  outline: none;
-}
-
-.dueñoanimal label{
-  position: absolute;
-  top: 50%;
-  left: 5px;
-  color: rgb(0, 0, 0);
-  transform: translateY(-50%);
-  font-size: 16px;
-  pointer-events: none;
-  transition: .5s;
-}
-
-.dueñoanimal span::before{
-  content: '';
-  position: absolute;
-  top: 40px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: rgb(255, 0, 64);
-  transition: .5s;
-}
-.dueñoanimal input:focus ~ label,
-.dueñoanimal input:focus ~ label{
-  top: -5px;
-  color: rgb(255, 0, 64);
-}
-
-.dueñoanimal input:focus ~ sapn::before,
-.dueñoanimal input:focus ~ sapn::before{
-  width: 100%;
-}
-
-input[type="submit"]{
+input[type="submit"] {
   width: 100%;
   height: 50px;
   border: 1px solid;
@@ -219,20 +178,20 @@ input[type="submit"]{
   outline: none;
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover {
   border-color: rgb(255, 0, 64);
   transition: .5s;
 }
-  
+
 /*Tabla Consulta Animal*/
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 50vh; /* centra verticalmente */
+  min-height: 50vh;
 }
 th, td {
-  border: 1px solid black; /* Borde para tabla, encabezados y celdas */
+  border: 1px solid black;
 }
 table {
   border-collapse: collapse;
@@ -243,20 +202,19 @@ thead {
   background: palevioletred;
 }
 th {
-  border: 1px solid #000;
   padding: 20px 15px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
 }
 td {
-padding: 15px;
-border-bottom: solid #000000;
+  padding: 15px;
+  border-bottom: solid #000000;
 }
-tbody tr{
+tbody tr {
   cursor: pointer;
 }
-tbody tr:hover{
+tbody tr:hover {
   background: rgb(230, 163, 185);
 }
 .btneliminanimal {
@@ -272,13 +230,22 @@ tbody tr:hover{
   background-color: #c0392b;
 }
 
+.nombreanimal input:focus ~ label,
+.nombreanimal input:not(:placeholder-shown) ~ label,
+.dueñoanimal input:focus ~ label,
+.dueñoanimal input:not(:placeholder-shown) ~ label {
+  top: -5px;
+  color: rgb(255, 0, 64);
+  font-size: 12px; /* Ajusta el tamaño si es necesario */
+}
+
 /* boton volver al listado*/
 .btnvolver {
-  display: block;              /* Para que se pueda centrar con margin auto */
-  width: fit-content;          /* Se ajusta al contenido */
-  margin: 20px auto;           /* Centra horizontalmente y agrega espacio arriba/abajo */
-  padding: 6px 12px;           
-  background-color: #f06292;   
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 6px 12px;
+  background-color: #f06292;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -288,8 +255,9 @@ tbody tr:hover{
 .btnvolver:hover {
   background-color: #e24687;
 }
+
 /* detalles animales*/
-.modal{
+.modal {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -301,7 +269,8 @@ tbody tr:hover{
   background: rgba(0,0,0,0.5);
   transition: all 508ms ease;
 }
-.contenedor{
+
+.contenedor {
   width: 400px;
   height: 340px;
   margin: auto;
@@ -309,6 +278,15 @@ tbody tr:hover{
   box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
   transition: all 508ms ease;
   position: relative;
+  border-radius: 20px;
+}
+
+.contenedor header {
+  padding: 10px;
+  background: #e24687;
+  color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .contenido {
@@ -316,16 +294,12 @@ tbody tr:hover{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: left;  /* Alineado a la izquierda */
-  margin-left: 20px;  /* Margen izquierdo */
+  text-align: left;
+  margin-left: 10px;
 }
+
 .contenido p {
-  margin: 20px 0;  /* Espaciado aumentado */
-  font-size: 22px;  /* Tamaño de letra aumentado */
+  margin: 20px 0;
+  font-size: 22px;
   font-family: Arial, sans-serif;
-}
-.contenedor header{
-  padding: 10px;
-  background: #e24687;
-  color: white;
 }
