@@ -92,7 +92,7 @@ nav ul li a:hover {
 /*Sección Registrar Animal*/
 .formulario {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
@@ -271,6 +271,12 @@ tbody tr:hover {
 
 .btneditar:hover {
   background-color: #e24687;
+}
+
+.botones-atencion {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 20px;
 }
 /* detalles animales*/
 .modal {
