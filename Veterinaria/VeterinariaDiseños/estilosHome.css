@@ -1,46 +1,84 @@
-html {
-  height: 100%;
-  background-image: linear-gradient(to top, #919191 0%, #000000 100%);
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
-nav {
-  max-width: 910px;
+/* SECCIÓN HOME */
+body.pantallahome {
+    font-family: "Libertinus Sans", sans-serif;
+}
+
+.containerprincipal {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(Imagenes/PerritoHusky.png);
+    background-position:
+        center,
+        center 104px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 0px 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.navbar {
   width: 100%;
-  padding: 25px 50px;
+  padding: 0px 0px;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Espacia entre logo y ul */
-  margin: 0 auto; /* Centra el nav dentro del body */
+  justify-content: space-between; 
+  margin: 0 auto; 
   position: relative;
   mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
 }
 
-/* Asegura que el logo se quede a la izquierda */
-nav .logo {
-  flex: 0 0 0;
+.navbar .logo {
+  transform: translateX(-15px);
 }
 
-nav .logo img {
+.navbar .logo img {
   height: 100px;
 }
 
-/* Centra la lista horizontalmente y asegura espacio suficiente */
-nav ul {
+.navbar ul {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 0px;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
 }
 
-nav ul li {
+.navbar ul li {
   display: inline-block;
 }
 
-
-nav ul li a {
+.navbar ul li a {
   padding: 18px;
   font-family: "Open Sans";
   text-transform: uppercase;
@@ -50,44 +88,34 @@ nav ul li a {
   display: block;
 }
 
-nav ul li a:hover {
+.navbar ul li a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
   background: rgba(255, 255, 255, 0.1);
   color: rgba(0, 0, 0, 0.7);
 }
 
-#banner {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background-image: url('PerritoHusky.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
+.header-content {
+    text-align: center;
+    margin-top: 150px; 
+    color: #f9fafc;
+    padding: 0 20px;
 }
 
-#banner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.397);
-  z-index: 1;
+.header-content h1 {
+    font-size: 100px;
+    margin-top: -200px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
 }
 
-#texto {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
+.header-content p {
+    font-size: 18px;
+    color: #c5c5c5;
+    max-width: 800px;
+    margin: 0 auto;
 }
+
+/* FIN SECCIÓN HOME*/
 
 /*Sección Registrar Animal*/
 .formulario {
@@ -100,7 +128,6 @@ nav ul li a:hover {
   border-radius: 10px;
   padding-bottom: 20px; /* 👈 opcional para que no quede apretado abajo */
 }
-
 
 .formulario h1 {
   text-align: center;
@@ -184,12 +211,13 @@ input[type="submit"]:hover {
 }
 
 /*Tabla Consulta Animal*/
-.container {
+.containerconsultaanimal {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 50vh;
 }
+
 th, td {
   border: 1px solid black;
 }
@@ -225,6 +253,23 @@ tbody tr:hover {
   border-radius: 4px;
   display: inline-block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .btneliminanimal:hover {
   background-color: #c0392b;
@@ -373,3 +418,6 @@ tbody tr:hover {
   font-size: 22px;
   font-family: Arial, sans-serif;
 }
+
+
+
