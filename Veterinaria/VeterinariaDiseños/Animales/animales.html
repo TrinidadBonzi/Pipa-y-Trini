@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilosHome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Sección Animales</title>
 </head>
 <body class="pantallaanimales">
@@ -18,41 +19,56 @@
                     </div>
                     <ul>
                         <li><a href="../Home.html">Volver al inicio</a></li>
-                        <li><a href="registraranimales.html">Registrar</a></li>
-                        <li><a href="consultaranimales.html">Consultar</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <div class="containerconsultaanimal">
-        <table id="tablaanimal">
-            <thead>
-                <tr>
-                   <th>N°</th> 
-                   <th>Nombre</th> 
-                   <th>Dueño</th> 
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>01</td>
-                    <td>Bruce</td>
-                    <td>Camila</td> 
-                    <td><a href="editaranimal.html" class="btneditanimal">Editar</a></td>
-                    <td><a href="detalleanimal.html" class="btndetalleanimal">Detalle</a></td>
-                    <td><a href="eliminaranimal.html" class="btneliminaranimal">Eliminar</a></td>
-                </tr>
-                <tr>
-                    <td>02</td>
-                    <td>Magnum</td>
-                    <td>Paco</td> 
-                    <td><a href="editaranimal.html" class="btneditanimal">Editar</a></td>
-                    <td><a href="detalleanimal.html" class="btndetalleanimal">Detalle</a></td>
-                    <td><a href="eliminaranimal.html" class="btneliminaranimal">Eliminar</a></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <div class="table">
+            <div class="table_header">
+                <p>Animales</p>
+                <div>
+                    <input placeholder=" buscar animal">
+                    <button class="registrarAnimal">Registrar</button>
+                </div>
+            </div>
+            <div class="table_section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Foto</th>
+                            <th>Nombre</th>
+                            <th>Dueño</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="../Imagenes/Animalestablafoto/Bobby.jpg" alt=""></td>
+                            <td>Bobby</td>
+                            <td>Javier</td>
+                            <td>
+                                <button><i class="fa-solid fa-info"></i></button>
+                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img src="../Imagenes/Animalestablafoto/Nala.jpg" alt=""></td>
+                            <td>Nala</td>
+                            <td>Olivia</td>
+                            <td>
+                                <button><i class="fa-solid fa-info"></i></button>
+                                <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 </body>
 </html>
