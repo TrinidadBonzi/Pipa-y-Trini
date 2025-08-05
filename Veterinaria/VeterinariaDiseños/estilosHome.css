@@ -7,6 +7,10 @@
     text-decoration: none;
     list-style: none;
 }
+html, body {
+  height: 100%;
+}
+
 
 /* SECCIÓN HOME */
 body.pantallahome {
@@ -36,7 +40,7 @@ body.pantallahome {
 }
 
 .menu {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: black;
     padding: 0px 0;
     width: 100%;
     position: absolute;
@@ -119,8 +123,59 @@ body.pantallahome {
     max-width: 800px;
     margin: 0 auto;
 }
-
 /* FIN SECCIÓN HOME*/
+
+/* SECCIÓN ANIMALES*/
+body.pantallaanimales {
+  font-family: "Libertinus Sans", sans-serif;
+  background: linear-gradient(to bottom, black, grey);
+}
+.headeranimales {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.containerconsultaanimal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  margin-top: 40px; /* Ajustá este valor según lo veas visualmente */
+  padding: 0 20px;
+}
+
+th, td {
+  border: 1px solid black;
+}
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+thead {
+  background: palevioletred;
+}
+th {
+  padding: 20px 15px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+td {
+  padding: 15px;
+  border-bottom: solid #000000;
+}
+tbody tr {
+  cursor: pointer;
+}
+tbody tr:hover {
+  background: rgb(230, 163, 185);
+}
+/* FIN SECCIÓN ANIMALES*/
 
 /*Sección Registrar Animal*/
 .formulario {
@@ -216,40 +271,9 @@ input[type="submit"]:hover {
 }
 
 /*Tabla Consulta Animal*/
-.containerconsultaanimal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 50vh;
-}
 
-th, td {
-  border: 1px solid black;
-}
-table {
-  border-collapse: collapse;
-  width: 50%;
-}
 
-thead {
-  background: palevioletred;
-}
-th {
-  padding: 20px 15px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-}
-td {
-  padding: 15px;
-  border-bottom: solid #000000;
-}
-tbody tr {
-  cursor: pointer;
-}
-tbody tr:hover {
-  background: rgb(230, 163, 185);
-}
+
 .btneliminanimal {
   padding: 6px 12px;
   background-color: #e74c3c;
